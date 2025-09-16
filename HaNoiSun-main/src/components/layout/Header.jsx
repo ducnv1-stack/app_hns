@@ -46,7 +46,7 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>Hotline: 1900 1234</span>
+                <span>Hotline: 0945 532 939</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
@@ -61,9 +61,8 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className={`sticky top-0 z-40 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
-      }`}>
+      <header className={`sticky top-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
+        }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -91,24 +90,22 @@ const Header = () => {
                 >
                   <Link
                     to={item.href}
-                    className={`font-medium transition-colors duration-200 flex items-center space-x-1 ${
-                      location.pathname === item.href
+                    className={`font-medium transition-colors duration-200 flex items-center space-x-1 ${location.pathname === item.href
                         ? 'text-primary-600 border-b-2 border-primary-600 pb-1'
                         : 'text-gray-700 hover:text-primary-600'
-                    }`}
+                      }`}
                   >
                     <span>{item.name}</span>
                     {item.hasMegaMenu && (
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${
-                        isMegaDropdownOpen ? 'rotate-180' : ''
-                      }`} />
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMegaDropdownOpen ? 'rotate-180' : ''
+                        }`} />
                     )}
                   </Link>
-                  
+
                   {/* Mega Dropdown */}
                   {item.hasMegaMenu && (
-                    <MegaDropdown 
-                      isOpen={isMegaDropdownOpen} 
+                    <MegaDropdown
+                      isOpen={isMegaDropdownOpen}
                       onClose={closeMegaDropdown}
                     />
                   )}
@@ -145,11 +142,10 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block py-2 font-medium transition-colors ${
-                    location.pathname === item.href
+                  className={`block py-2 font-medium transition-colors ${location.pathname === item.href
                       ? 'text-primary-600'
                       : 'text-gray-700 hover:text-primary-600'
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </Link>
