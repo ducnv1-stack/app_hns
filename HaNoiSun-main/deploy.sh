@@ -100,7 +100,7 @@ deploy_app() {
     # Check if containers are running
     if docker-compose ps | grep -q "Up"; then
         print_status "✅ Deployment successful!"
-        print_status "Application is running at: http://$SERVER_IP"
+        print_status "Application is running at: http://$SERVER_IP:8080"
     else
         print_error "❌ Deployment failed. Check container logs:"
         docker-compose logs
@@ -119,8 +119,8 @@ cleanup() {
 health_check() {
     print_status "Performing health check..."
     
-    # Check if port 80 is accessible
-    if curl -f -s "http://localhost" > /dev/null; then
+    # Check if port 8080 is accessible
+    if curl -f -s "http://localhost:8080" > /dev/null; then
         print_status "✅ Health check passed - Application is responding"
     else
         print_warning "⚠️  Health check failed - Application may not be fully ready"
@@ -140,7 +140,7 @@ main() {
     health_check
     
     print_status "🎉 Deployment completed successfully!"
-    print_status "Access your application at: http://$SERVER_IP"
+    print_status "Access your application at: http://$SERVER_IP:8080"
     print_status ""
     print_status "Useful commands:"
     print_status "  - View logs: docker-compose logs -f"
