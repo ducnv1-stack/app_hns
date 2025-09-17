@@ -4,7 +4,14 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Copy } from 'lucide-
 
 const Footer = () => {
   const location = useLocation();
-  const isContactPage = location.pathname === '/contact';
+  const pathname = location.pathname || '/';
+  const showOffices = (
+    pathname === '/' ||
+    pathname === '/about' ||
+    pathname === '/contact' ||
+    pathname === '/tours' ||
+    pathname.startsWith('/tours/country/')
+  );
   const handleCopy = (text) => {
     try {
       if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
@@ -111,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {isContactPage && (
+        {showOffices && (
           <div className="mt-10 ">
             <h4 className="text-xl font-semibold mb-4">Các Văn Phòng Đại Diện</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
