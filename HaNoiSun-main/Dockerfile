@@ -1,30 +1,22 @@
+# /root/app_hns/HaNoiSun-main/Dockerfile
+
 # Build stage
 FROM node:18-alpine as build
 
 WORKDIR /app
-
-# Copy package files
 COPY package*.json ./
-
-# Install dependencies (including devDependencies for build)
 RUN npm ci
-
-# Copy source code
 COPY . .
-
-# Build the application
 RUN npm run build
 
 # Production stage
 FROM nginx:alpine
 
-# Copy built assets from build stage
+# Copy built assets từ stage build
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Copy nginx configuration
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
-# Expose port 80
+# Expose port 80 (bên trong container)
 EXPOSE 80
 
 # Start nginx

@@ -1,19 +1,18 @@
+# File: docker-compose.yml (Phiên bản đơn giản và chính xác)
 version: '3.8'
 
 services:
-  hanoisun-app:
-    build: .
-    container_name: hanoisun-app
+  # Chỉ cần một service này, build từ Dockerfile của bạn
+  webserver:
+    build: .  # Build từ Dockerfile trong thư mục hiện tại
+    restart: always
     ports:
       - "80:80"
-    restart: unless-stopped
-    networks:
-      - hanoisun-network
+      - "443:443"
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-    environment:
-      - NODE_ENV=production
-
-networks:
-  hanoisun-network:
-    driver: bridge
+      # Ghi đè file config mặc định trong image bằng file config SSL của chúng ta
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      # Volume để certbot xác thực
+      - ./certbot/www:/var/www/certbot
+      # Volume để đọc chứng chỉ SSL từ host
+      - /etc/letsencrypt:/etc/letsencrypt:ro
