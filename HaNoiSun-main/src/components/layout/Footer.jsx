@@ -10,7 +10,9 @@ const Footer = () => {
     pathname === '/about' ||
     pathname === '/contact' ||
     pathname === '/tours' ||
-    pathname.startsWith('/tours/country/')
+    pathname.startsWith('/tours/country/') ||
+    pathname.startsWith('/tours/') ||
+    pathname.startsWith('/booking/')
   );
   const handleCopy = (text) => {
     try {

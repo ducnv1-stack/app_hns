@@ -1,229 +1,221 @@
 // Centralized tour data with country keys for filtering
 
 export const tours = [
+  // Combo Đà Nẵng
   {
     id: 1,
-    title: 'Du Thuyền Hạ Long Bay Luxury 3N2Đ',
-    location: 'Vịnh Hạ Long, Quảng Ninh',
+    title: 'Combo Đà Nẵng 4N3Đ/3N2Đ 2025 siêu rẻ',
+    location: 'Đà Nẵng, Việt Nam',
     country: 'vietnam',
     continent: 'domestic',
-    price: 4890000,
-    originalPrice: 5890000,
-    duration: '3 ngày 2 đêm',
-    groupSize: '12-16 người',
+    price: 4750000,
+    originalPrice: 4850000,
+    duration: '3-4 ngày',
+    groupSize: '2 người trở lên',
     rating: 4.9,
-    reviews: 234,
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    category: 'luxury',
+    reviews: 320,
+    image: 'https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1200&q=80',
+    category: 'combo',
     isPopular: true,
     isOnSale: true,
-    highlights: ['Du thuyền 5 sao', 'Ẩm thực cao cấp', 'Kayak miễn phí', 'Spa thư giãn'],
-    discount: 17,
-    departureDate: '2024-12-15',
-    availability: 'Còn 3 chỗ',
-    availableDates: ['2024-12-15', '2024-12-20', '2024-12-25', '2025-01-05', '2025-01-10'],
-    pricing: { adult: 4890000, child: 3667500, infant: 0 },
-    description: 'Trải nghiệm du thuyền 5 sao tại Vịnh Hạ Long với ẩm thực cao cấp, hoạt động kayak và spa thư giãn.',
-    introduction: 'Vịnh Hạ Long – di sản thiên nhiên thế giới, nổi tiếng với hàng nghìn hòn đảo đá vôi kỳ vĩ, hang động kỳ thú và làn nước xanh ngọc. Hành trình 3N2Đ nghỉ đêm trên du thuyền 5* đưa bạn khám phá hệ thống hang động đẹp nhất vịnh, ghé thăm làng chài truyền thống trên biển, trải nghiệm chèo kayak len lỏi qua những vách đá dựng đứng, ngắm hoàng hôn trên boong tàu và thưởng thức tiệc tối sang trọng giữa không gian biển khơi. Với lịch trình cân bằng giữa tham quan – nghỉ dưỡng – ẩm thực, chuyến đi phù hợp cho gia đình, cặp đôi và nhóm bạn muốn tận hưởng kỳ nghỉ trọn vẹn.',
+    highlights: ['Vé máy bay khứ hồi Vietnam Airlines', 'Khách sạn 4* trung tâm', 'Buffet sáng', 'Tiện ích hồ bơi & gym'],
+    discount: 5,
+    departureDate: '2025-10-26',
+    availability: 'Nhiều ngày khởi hành',
+    availableDates: [
+      // 4N3Đ
+      '2025-10-26', '2025-11-09', '2025-11-23', '2025-11-24', '2025-12-29',
+      // 3N2Đ
+      '2025-10-27', '2025-10-29', '2025-11-10', '2025-11-26', '2025-11-30'
+    ],
+    pricing: { adult: 4750000, child: 3562500, infant: 0 },
+    description: 'Combo máy bay + khách sạn Đà Nẵng tiêu chuẩn 4* vị trí trung tâm, bao gồm buffet sáng và sử dụng tiện ích.',
+    introduction: 'Combo linh hoạt 3N2Đ hoặc 4N3Đ dành cho 2 pax trở lên. Bay Vietnam Airlines 23kg hành lý ký gửi mỗi chiều.',
+    schedules: [
+      {
+        title: '4N3Đ',
+        options: [
+          { range: '26/10-29/10', time: '(11H45-13H45)', price: 4750000 },
+          { range: '09/11-12/11', time: '(11H45-13H45)', price: 4850000 },
+          { range: '23/11-26/11', time: '(11H45-13H45)', price: 4850000 },
+          { range: '24/11-27/11', time: '(11H45-13H45)', price: 4850000 },
+          { range: '29/12-1/1/2026', time: '(11H45-13H45)', price: 4850000 }
+        ]
+      },
+      {
+        title: '3N2Đ',
+        options: [
+          { range: '27/10-29/10', time: '(7H45-17H00)', price: 4200000 },
+          { range: '29/10-31/10', time: '(7H45-17H00)', price: 4200000 },
+          { range: '10/11-12/11', time: '(7H45-17H00)', price: 4290000 },
+          { range: '26/11-28/11', time: '(7H45-17H00)', price: 4290000 },
+          { range: '30/11-2/12', time: '(7H45-17H00)', price: 4290000 }
+        ]
+      }
+    ],
     itinerary: [
-      { day: 1, title: 'Hà Nội – Bến tàu Hòn Gai – Nhận phòng du thuyền',
-        summary: 'Đón khách tại Hà Nội, di chuyển tới Hạ Long, lên du thuyền, ăn trưa, tham quan hang Sửng Sốt/Thiên Cung (tuỳ tuyến), chèo kayak/bơi.',
-        meals: { breakfast: false, lunch: true, dinner: true },
-        transport: ['bus','ship'],
-        stay: 'Cabin view biển trên du thuyền 5*',
-        activities: [ '08:00-08:30: Đón tại điểm hẹn ở Hà Nội (phụ thu xe đón).', '11:30: Làm thủ tục lên tàu tại bến Hòn Gai.', '12:30: Ăn trưa set menu khi tàu rời bến.', '15:00: Tham quan hang động nổi tiếng và chèo kayak/bơi lội.', '18:00: Sunset party trên boong tàu.','19:00: Bữa tối theo phong cách Á-Âu.' ] },
-      { day: 2, title: 'Khám phá vịnh – Làng chài – Tiệc tối',
-        summary: 'Tập Tai Chi, thăm làng chài nổi/đảo Titop, tự do tắm biển/ngắm toàn cảnh vịnh, thưởng thức bữa tối và hoạt động câu mực ban đêm.',
-        meals: { breakfast: true, lunch: true, dinner: true },
-        transport: ['ship','boat'],
-        stay: 'Cabin view biển trên du thuyền 5*',
-        activities: [ '06:00: Tập Tai Chi, ngắm bình minh.', '07:00: Ăn sáng nhẹ.', '08:30: Thăm làng chài/đảo Titop, leo núi ngắm toàn cảnh.', '12:00: Ăn trưa trên tàu.', 'Chiều: Nghỉ ngơi, spa (tự túc).', '19:00: Gala dinner. 21:00: Câu mực/giải trí.' ] },
-      { day: 3, title: 'Hạ Long – Hà Nội',
-        summary: 'Thăm quan buổi sáng, brunch trên tàu, trả khách về Hà Nội.',
-        meals: { breakfast: true, lunch: true, dinner: false },
-        transport: ['ship','bus'],
-        stay: null,
-        activities: [ '06:30: Tập Tai Chi.', '07:00: Tham quan hang/làng chài (tuỳ hải trình).', '09:30: Brunch trên tàu.', '10:30-11:00: Trả khách tại bến, xe đưa về Hà Nội.' ] }
+      { day: 1, title: 'Hà Nội – Đà Nẵng', summary: 'Bay Vietnam Airlines, nhận phòng khách sạn 4* trung tâm.' },
+      { day: 2, title: 'Tự do tham quan', summary: 'Ngũ Hành Sơn – Phố cổ Hội An – Bà Nà Hills (tự túc).' },
+      { day: 3, title: 'Biển Mỹ Khê – đặc sản', summary: 'Tắm biển, thưởng thức hải sản. Trả phòng.' },
+      { day: 4, title: 'Đà Nẵng – Hà Nội', summary: 'Trả phòng – ra sân bay (áp dụng gói 4N3Đ).' }
     ]
   },
+
+  // Hang Ngọc Rồng – Hành trình huyền thoại (Quảng Ninh)
   {
     id: 2,
-    title: 'Tokyo - Osaka - Kyoto Mùa Hoa Anh Đào',
-    location: 'Tokyo - Osaka - Kyoto, Nhật Bản',
-    country: 'japan',
-    continent: 'asia',
-    price: 32900000,
-    originalPrice: 36900000,
-    duration: '7 ngày 6 đêm',
-    groupSize: '20-25 người',
-    rating: 4.8,
-    reviews: 189,
-    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    category: 'cultural',
-    isPopular: true,
-    isOnSale: true,
-    highlights: ['Hoa anh đào', 'Núi Phú Sĩ', 'Đền Kiyomizu', 'Onsen truyền thống'],
-    discount: 11,
-    departureDate: '2024-03-20',
-    availability: 'Còn 5 chỗ',
-    availableDates: ['2024-03-20', '2024-03-27', '2024-04-03'],
-    pricing: { adult: 32900000, child: 24675000, infant: 0 },
-    description: 'Hành trình mùa hoa anh đào rực rỡ qua Tokyo, Osaka và Kyoto, khám phá văn hóa Nhật Bản.',
-    introduction: 'Nhật Bản – xứ sở hoa anh đào với nhịp sống hiện đại đan xen văn hoá truyền thống. Hành trình 7N6Đ bắt đầu ở Tokyo sôi động, tiếp tục chinh phục biểu tượng Mt. Fuji, trải nghiệm tàu siêu tốc Shinkansen, lạc bước giữa rừng cổng Torii đỏ bất tận tại Fushimi Inari và kết thúc tại Osaka – thiên đường ẩm thực đường phố. Chương trình chú trọng trải nghiệm nguyên bản, ẩm thực địa phương và các góc check-in đặc sắc, phù hợp cho gia đình và tín đồ khám phá.',
-    itinerary: [
-      { day: 1, title: 'Hà Nội – Tokyo', summary: 'Bay thẳng tới Tokyo, làm thủ tục nhập cảnh và nhận phòng.', meals: { breakfast: false, lunch: false, dinner: true }, transport: ['plane','bus'], stay: 'Khách sạn 4* tại Tokyo', activities: ['Làm thủ tục xuất cảnh tại Nội Bài','Đến Narita/Haneda, xe đón về khách sạn','Ăn tối, nghỉ ngơi'] },
-      { day: 2, title: 'Tokyo city tour', summary: 'Khám phá Hoàng cung, chùa Asakusa, phố Nakamise và chụp hình Tokyo Skytree.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* Tokyo', activities: ['Hoàng Cung (bên ngoài)','Đền Asakusa Kannon','Phố cổ Nakamise','Chụp hình Tokyo Skytree'] },
-      { day: 3, title: 'Núi Phú Sĩ – Làng cổ Oshino', summary: 'Ngắm Mt. Fuji, làng Oshino Hakkai, thưởng thức đặc sản địa phương.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* khu vực Yamanashi/Tokyo', activities: ['Trạm 5 núi Phú Sĩ (tuỳ thời tiết)','Làng cổ Oshino Hakkai','Shopping Gotemba (tuỳ thời gian)'] },
-      { day: 4, title: 'Tokyo – Kyoto – Osaka', summary: 'Di chuyển Shinkansen, tham quan phố cổ Gion/đền Kiyomizu, tối dạo Dotonbori.', meals: { breakfast: true, lunch: false, dinner: true }, transport: ['train','bus'], stay: 'Khách sạn 4* Osaka', activities: ['Tàu siêu tốc Shinkansen','Tham quan Kyoto (Kiyomizu/Gion)','Dotonbori – Shinsaibashi'] },
-      { day: 5, title: 'Kyoto linh thiêng', summary: 'Cổng Torii đỏ tại Fushimi Inari, rừng tre Arashiyama.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* Osaka', activities: ['Fushimi Inari Taisha','Arashiyama – cầu Togetsukyo'] },
-      { day: 6, title: 'Osaka', summary: 'Lâu đài Osaka, tự do mua sắm.', meals: { breakfast: true, lunch: false, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* Osaka', activities: ['Lâu đài Osaka (bên ngoài)','Tự do mua sắm Nipponbashi/AEON'] },
-      { day: 7, title: 'Osaka – Hà Nội', summary: 'Ra sân bay Kansai/Itami đáp chuyến bay về Việt Nam.', meals: { breakfast: true, lunch: false, dinner: false }, transport: ['bus','plane'], stay: null, activities: ['Làm thủ tục trả phòng','Ra sân bay về Việt Nam'] }
-    ]
-  },
-  {
-    id: 3,
-    title: 'Paris - London - Amsterdam 8N7Đ',
-    location: 'Paris - London - Amsterdam',
-    country: 'france',
-    continent: 'europe',
-    price: 45900000,
-    originalPrice: 52900000,
-    duration: '8 ngày 7 đêm',
-    groupSize: '18-22 người',
-    rating: 4.7,
-    reviews: 156,
-    image: 'https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    category: 'cultural',
-    isPopular: true,
-    isOnSale: true,
-    highlights: ['Tháp Eiffel', 'Big Ben', 'Kênh Amsterdam', 'Bảo tàng Louvre'],
-    discount: 13,
-    departureDate: '2024-12-20',
-    availability: 'Còn 8 chỗ',
-    availableDates: ['2024-12-20', '2025-01-10'],
-    pricing: { adult: 45900000, child: 34425000, infant: 0 },
-    description: 'Khám phá kinh đô ánh sáng Paris, London cổ kính và Amsterdam lãng mạn trong 8 ngày.',
-    introduction: 'Châu Âu cổ điển – sang trọng với hành trình 8N7Đ qua ba kinh đô du lịch: Paris – Amsterdam – London. Bạn sẽ thả hồn trên dòng Seine khi hoàng hôn buông xuống, dạo thuyền qua những kênh đào lãng mạn, ghé thăm làng cối xay gió và chiêm ngưỡng những biểu tượng bất hủ như Tháp Eiffel, Big Ben hay Tower Bridge. Lịch trình kết hợp cân đối giữa tham quan, trải nghiệm văn hoá – ẩm thực và thời gian tự do mua sắm.',
-    itinerary: [
-      { day: 1, title: 'Hà Nội – Paris', summary: 'Bay tới Paris, nhận phòng nghỉ ngơi.', meals: { breakfast: false, lunch: false, dinner: true }, transport: ['plane','bus'], stay: 'Khách sạn 4* Paris', activities: ['Đến sân bay CDG/ORY','Xe đón về khách sạn'] },
-      { day: 2, title: 'Paris city tour', summary: 'Tháp Eiffel, Khải Hoàn Môn, đại lộ Champs-Élysées, du thuyền sông Seine.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus','boat'], stay: 'Khách sạn 4* Paris', activities: ['Tháp Eiffel (bên ngoài/ lên tầng tuỳ chọn)','Khải Hoàn Môn','Du thuyền sông Seine'] },
-      { day: 3, title: 'Paris – Brussels – Amsterdam', summary: 'Tham quan quảng trường Grand Place, Manneken Pis, di chuyển Amsterdam.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* Amsterdam', activities: ['Grand Place','Tượng chú bé đứng tè','Tới Amsterdam'] },
-      { day: 4, title: 'Amsterdam – Làng cối xay gió', summary: 'Du thuyền kênh đào, làng Zaanse Schans/Volendam.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus','boat'], stay: 'Khách sạn 4* Amsterdam', activities: ['Canal Cruise','Zaanse Schans/Volendam'] },
-      { day: 5, title: 'Amsterdam – London', summary: 'Di chuyển sang London bằng coach/Eurostar (tuỳ chương trình), chụp hình Big Ben.', meals: { breakfast: true, lunch: false, dinner: true }, transport: ['bus','train'], stay: 'Khách sạn 4* London', activities: ['Check-in London','Big Ben – Westminster'] },
-      { day: 6, title: 'London city tour', summary: 'Cung điện Buckingham, Tower Bridge, Nhà thờ St. Paul.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* London', activities: ['Buckingham (lễ đổi gác nếu có)','Tower Bridge','St. Paul Cathedral (bên ngoài)'] },
-      { day: 7, title: 'London tự do', summary: 'Tự do mua sắm ở Oxford Street/Harrods.', meals: { breakfast: true, lunch: false, dinner: false }, transport: [], stay: 'Khách sạn 4* London', activities: ['Mua sắm, trải nghiệm ẩm thực'] },
-      { day: 8, title: 'London – Hà Nội', summary: 'Ra sân bay về Việt Nam.', meals: { breakfast: true, lunch: false, dinner: false }, transport: ['bus','plane'], stay: null, activities: ['Trả phòng','Ra sân bay'] }
-    ]
-  },
-  {
-    id: 7,
-    title: 'Seoul - Busan - Jeju Island',
-    location: 'Hàn Quốc',
-    country: 'south-korea',
-    continent: 'asia',
-    price: 18900000,
-    originalPrice: 21900000,
-    duration: '6 ngày 5 đêm',
-    groupSize: '20-25 người',
-    rating: 4.7,
-    reviews: 178,
-    image: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    category: 'cultural',
-    isPopular: true,
-    isOnSale: true,
-    highlights: ['Cung điện Gyeongbok', 'Đảo Jeju', 'Busan Beach', 'K-Pop Culture'],
-    discount: 14,
-    departureDate: '2024-12-22',
-    availability: 'Còn 7 chỗ',
-    availableDates: ['2024-12-22', '2025-01-05'],
-    pricing: { adult: 18900000, child: 14175000, infant: 0 },
-    description: 'Hành trình Hàn Quốc qua Seoul, Busan và đảo Jeju với thiên nhiên, văn hóa và ẩm thực.',
-    introduction: 'Hàn Quốc 6N5Đ: Seoul hiện đại – Busan biển xanh – Jeju thiên đường đảo. Khám phá cung điện nguy nga, làng cổ Hanok, thưởng thức ẩm thực đường phố, dạo biển Haeundae, bay tới Jeju với khung cảnh như phim và chinh phục đỉnh Sunrise Peak. Lộ trình tối ưu giúp bạn cảm nhận trọn vẹn văn hoá, thiên nhiên và nhịp sống Hàn.',
-    itinerary: [
-      { day: 1, title: 'Hà Nội – Seoul', summary: 'Bay tới Incheon, nhận phòng khách sạn.', meals: { breakfast: false, lunch: false, dinner: true }, transport: ['plane','bus'], stay: 'Khách sạn 4* Seoul', activities: ['Incheon – trung tâm Seoul'] },
-      { day: 2, title: 'Seoul city tour', summary: 'Cung Gyeongbok, làng Bukchon, Suối Cheonggyecheon, phố Myeongdong.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* Seoul', activities: ['Gyeongbokgung (đổi gác nếu có)','Bukchon Hanok','Myeongdong Shopping Street'] },
-      { day: 3, title: 'Seoul – Busan', summary: 'KTX/Coach tới Busan, biển Haeundae, chợ cá Jagalchi.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['train','bus'], stay: 'Khách sạn 4* Busan', activities: ['Bãi biển Haeundae','Chợ Jagalchi'] },
-      { day: 4, title: 'Busan – Jeju', summary: 'Bay tới Jeju, Yongduam, con đường ma túy (Mysterious Road).', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['plane','bus'], stay: 'Khách sạn 4* Jeju', activities: ['Yongduam Rock','Mysterious Road'] },
-      { day: 5, title: 'Khám phá Jeju', summary: 'Đỉnh Seongsan Sunrise Peak, bãi Seopjikoji, làng dân tộc Seongeup.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Khách sạn 4* Jeju', activities: ['Seongsan Ilchulbong','Seopjikoji','Seongeup Folk Village'] },
-      { day: 6, title: 'Jeju – Hà Nội', summary: 'Ra sân bay trở về Việt Nam.', meals: { breakfast: true, lunch: false, dinner: false }, transport: ['bus','plane'], stay: null, activities: ['Trả phòng – ra sân bay'] }
-    ]
-  },
-  {
-    id: 9,
-    title: 'Bangkok - Pattaya - Phuket',
-    location: 'Thái Lan',
-    country: 'thailand',
-    continent: 'asia',
-    price: 8900000,
-    originalPrice: 10900000,
-    duration: '5 ngày 4 đêm',
-    groupSize: '25-30 người',
-    rating: 4.5,
-    reviews: 298,
-    image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    category: 'beach',
-    isPopular: true,
-    isOnSale: true,
-    highlights: ['Đền Wat Pho', 'Floating Market', 'Phi Phi Island', 'Thai Massage'],
-    discount: 18,
-    departureDate: '2024-12-16',
-    availability: 'Còn 15 chỗ',
-    availableDates: ['2024-12-16', '2024-12-30', '2025-01-12'],
-    pricing: { adult: 8900000, child: 6675000, infant: 0 },
-    description: 'Thiên đường biển Thái Lan với Bangkok sôi động, Pattaya náo nhiệt và Phuket tuyệt đẹp.',
-    introduction: 'Thái Lan 5N4Đ – 3 điểm đến trong một hành trình: Bangkok linh thiêng với những ngôi chùa vàng tráng lệ; Pattaya náo nhiệt – thành phố không ngủ; Phuket trong xanh – cánh cổng tới những hòn đảo đẹp nhất khu vực. Chương trình kết hợp city tour – show đặc sắc – tour đảo, thời gian thư giãn và trải nghiệm ẩm thực đường phố giá rẻ, phù hợp mọi lứa tuổi.',
-    itinerary: [
-      { day: 1, title: 'Hà Nội – Bangkok', summary: 'Bay Hà Nội – Bangkok, chợ đêm, ẩm thực đường phố.', meals: { breakfast: false, lunch: false, dinner: true }, transport: ['plane','bus'], stay: 'Khách sạn 4* Bangkok', activities: ['Check-in khách sạn','Khám phá chợ đêm Ratchada/Asiatique'] },
-      { day: 2, title: 'Bangkok – Pattaya', summary: 'Wat Pho/Wat Arun, di chuyển Pattaya, show ALCAZAR (tuỳ chọn).', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus','boat'], stay: 'Khách sạn 4* Pattaya', activities: ['Chùa Wat Pho','Chùa Wat Arun (thuyền qua sông)','ALCAZAR show (tự túc)'] },
-      { day: 3, title: 'Pattaya – Phuket', summary: 'Tắm biển Pattaya, bay sang Phuket, dạo Patong.', meals: { breakfast: true, lunch: false, dinner: true }, transport: ['bus','plane'], stay: 'Khách sạn 4* Phuket', activities: ['Bãi biển Pattaya','Bay tới Phuket','Phố Bangla/Patong'] },
-      { day: 4, title: 'Phuket – Tour đảo', summary: 'Lựa chọn tour đảo Phi Phi hoặc vịnh Phang Nga (James Bond).', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['boat','bus'], stay: 'Khách sạn 4* Phuket', activities: ['Lặn ngắm san hô','Vịnh Maya/James Bond (tuỳ chọn tuyến)'] },
-      { day: 5, title: 'Phuket – Hà Nội', summary: 'Ra sân bay về Việt Nam.', meals: { breakfast: true, lunch: false, dinner: false }, transport: ['bus','plane'], stay: null, activities: ['Tự do – Ra sân bay'] }
-    ]
-  },
-  {
-    id: 10,
-    title: 'Phú Quốc Resort & Safari',
-    location: 'Đảo Phú Quốc, Kiên Giang',
+    title: 'Hang Ngọc Rồng – Hành trình huyền thoại',
+    location: 'Cẩm Phả, Quảng Ninh',
     country: 'vietnam',
     continent: 'domestic',
-    price: 4290000,
-    originalPrice: 4890000,
-    duration: '4 ngày 3 đêm',
-    groupSize: '12-16 người',
+    price: 590000,
+    originalPrice: 690000,
+    duration: '1 ngày',
+    groupSize: 'Mọi lứa tuổi',
     rating: 4.8,
-    reviews: 189,
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    category: 'beach',
+    reviews: 512,
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    category: 'combo',
     isPopular: true,
     isOnSale: true,
-    highlights: ['Resort 5 sao', 'Safari Phú Quốc', 'Cáp treo Hòn Thơm', 'Sunset Sanato'],
-    discount: 12,
-    departureDate: '2024-12-20',
-    availability: 'Còn 8 chỗ',
-    availableDates: ['2024-12-20', '2024-12-27'],
-    pricing: { adult: 4290000, child: 3217500, infant: 0 },
-    description: 'Nghỉ dưỡng cao cấp tại Phú Quốc với resort 5 sao, Safari và cáp treo Hòn Thơm.',
-    introduction: 'Phú Quốc – đảo ngọc với bờ biển cát trắng mịn, hàng dừa xanh và hoàng hôn lộng lẫy. Hành trình 4N3Đ tập trung nghỉ dưỡng tại resort 5*, khám phá Safari bán hoang dã, vui chơi thả ga tại VinWonders, trải nghiệm cáp treo vượt biển dài kỷ lục đến Hòn Thơm, tắm biển và thưởng thức hải sản tươi ngon. Rất phù hợp cho gia đình và các cặp đôi muốn “nạp năng lượng”.',
+    highlights: ['Vé tham quan + check-in', 'Show “Đi tìm dấu ngọc”', 'Ẩm thực Quảng Ninh', 'Không phụ thu cuối tuần*'],
+    discount: 15,
+    departureDate: '2025-10-15',
+    availability: 'Áp dụng đến 15/10/2025',
+    availableDates: ['2025-09-20', '2025-09-27', '2025-10-04', '2025-10-11'],
+    pricing: { adult: 590000, child: 590000, infant: 0 },
+    description: 'Trọn gói tham quan Hang Ngọc Rồng – hạ Long huyền ảo với show diễn thực cảnh đặc sắc.',
+    introduction: 'Địa chỉ: Tổ 63, Khu Diêm Thuỷ, P. Cẩm Đông, TP. Cẩm Phả, Quảng Ninh. Phù hợp gia đình và nhóm bạn.',
     itinerary: [
-      { day: 1, title: 'Hà Nội – Phú Quốc', summary: 'Bay tới Phú Quốc, nhận phòng resort, tắm biển.', meals: { breakfast: false, lunch: false, dinner: true }, transport: ['plane','bus'], stay: 'Resort 5* Phú Quốc', activities: ['Check-in resort','Tắm biển/Check-in sunset'] },
-      { day: 2, title: 'Vinpearl Safari – VinWonders', summary: 'Khám phá safari bán hoang dã và công viên giải trí.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus'], stay: 'Resort 5* Phú Quốc', activities: ['Vinpearl Safari','VinWonders Phú Quốc'] },
-      { day: 3, title: 'Hòn Thơm – Cáp treo', summary: 'Trải nghiệm cáp treo vượt biển dài kỷ lục, vui chơi bãi biển.', meals: { breakfast: true, lunch: true, dinner: false }, transport: ['bus','boat'], stay: 'Resort 5* Phú Quốc', activities: ['Cáp treo Hòn Thơm','Tắm biển – thể thao nước'] },
-      { day: 4, title: 'Phú Quốc – Hà Nội', summary: 'Tự do mua đặc sản, ra sân bay.', meals: { breakfast: true, lunch: false, dinner: false }, transport: ['bus','plane'], stay: null, activities: ['Trả phòng – ra sân bay'] }
+      { day: 1, title: 'Check-in Hang Ngọc Rồng', summary: 'Tham quan – xem show – thưởng thức đặc sản Quảng Ninh.' }
+    ]
+  },
+
+  // Combo Quy Nhơn/Tuy Hoà 4N3Đ cuối năm
+  {
+    id: 3,
+    title: 'Combo Vi Vu Quy Nhơn, Tuy Hoà 4N3Đ cuối năm',
+    location: 'Quy Nhơn / Tuy Hoà, Việt Nam',
+    country: 'vietnam',
+    continent: 'domestic',
+    price: 4690000,
+    originalPrice: 4890000,
+    duration: '4 ngày 3 đêm',
+    groupSize: '2 người trở lên',
+    rating: 4.7,
+    reviews: 274,
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80',
+    category: 'combo',
+    isPopular: true,
+    isOnSale: true,
+    highlights: ['Vé khứ hồi Vietnam Airlines 23kg', 'Nghỉ 4* Sala/4* Lamour', 'Buffet sáng', 'Tiện ích khách sạn'],
+    discount: 4,
+    departureDate: '2025-10-26',
+    availability: 'Nhiều ngày khởi hành',
+    availableDates: [
+      '2025-10-26', '2025-10-27',
+      '2025-11-11', '2025-11-25',
+      '2025-12-02', '2025-12-07', '2025-12-08', '2025-12-14', '2025-12-22', '2025-12-28'
+    ],
+    pricing: { adult: 4690000, child: 3517500, infant: 0 },
+    description: 'Combo máy bay + khách sạn 4* Quy Nhơn/Tuy Hoà giá tốt cuối năm, kèm buffet sáng.',
+    introduction: 'Hãng bay Vietnam Airlines tiêu chuẩn 23kg ký gửi. Lịch khởi hành dày, linh hoạt theo nhu cầu.',
+    schedules: [
+      {
+        title: 'Lịch trình 4N3Đ',
+        options: [
+          { range: '26/10-29/10', time: '(11H50-13H30)', price: 4890000 },
+          { range: '27/10-30/10', time: '(11H50-13H30)', price: 4890000 },
+          { range: '11/11-14/11', time: '(11H50-13H30)', price: 4890000 },
+          { range: '25/11-28/11', time: '(11H50-13H30)', price: 4890000 },
+          { range: '02/12-05/12', time: '(11H50-13H30)', price: 4890000 },
+          { range: '07/12-10/12', time: '(11H50-13H30)', price: 4690000 },
+          { range: '08/12-11/12', time: '(11H50-13H30)', price: 4890000 },
+          { range: '14/12-17/12', time: '(11H50-13H30)', price: 4690000 },
+          { range: '22/12-25/12', time: '(11H50-13H30)', price: 4890000 },
+          { range: '28/12-31/12', time: '(11H50-13H30)', price: 4690000 }
+        ]
+      }
+    ],
+    itinerary: [
+      { day: 1, title: 'Hà Nội – Quy Nhơn/Tuy Hoà', summary: 'Bay Vietnam Airlines – nhận phòng khách sạn 4*.' },
+      { day: 2, title: 'Tham quan tự do', summary: 'Eo Gió – Kỳ Co – Ghềnh Ráng (tự túc).' },
+      { day: 3, title: 'Biển đảo – Ẩm thực', summary: 'Tắm biển – ẩm thực miền Trung.' },
+      { day: 4, title: 'Trả phòng – ra sân bay', summary: 'Kết thúc hành trình 4N3Đ.' }
+    ]
+  }
+  ,
+  // Combo Nha Trang cuối năm VNA
+  {
+    id: 4,
+    title: 'Combo Nha Trang cuối năm bay VNA xịn xò',
+    location: 'Nha Trang, Khánh Hòa',
+    country: 'vietnam',
+    continent: 'domestic',
+    price: 4590000,
+    originalPrice: 4590000,
+    duration: '3-4 ngày',
+    groupSize: '2 người trở lên',
+    rating: 4.8,
+    reviews: 168,
+    image: '/hero/Combo_Nha_Trang/nha-trang-2.jpg',
+    category: 'combo',
+    isPopular: true,
+    isOnSale: true,
+    highlights: [
+      'VMB khứ hồi Vietnam Airlines + 23kg ký gửi',
+      '02 hoặc 03 đêm tại Xavia 4* trung tâm bên biển',
+      'Miễn phí buffet sáng hàng ngày',
+      'Miễn phí nước uống trong phòng mỗi ngày',
+      'Sử dụng hồ bơi, phòng tập gym'
+    ],
+    discount: 0,
+    departureDate: '2025-11-02',
+    availability: 'Nhiều ngày khởi hành',
+    availableDates: [
+      '2025-11-02', '2025-11-17', // 4N3Đ
+      '2025-11-09', '2025-11-16', '2025-11-26' // 3N2Đ
+    ],
+    pricing: { adult: 4590000, child: 3442500, infant: 0 },
+    description: 'Combo bay Vietnam Airlines và lưu trú 4* Xavia ngay trung tâm Nha Trang, bao gồm buffet sáng và tiện ích.',
+    introduction: 'Giờ bay tham khảo: 10:15 - 12:45 (4N3Đ) và 10:15 - 15:50 (3N2Đ). Lịch có thể thay đổi tùy ngày.',
+    // Hotel gallery uses exact filenames as provided in public/hero/Combo_Nha_Trang
+    gallery: [
+      '/hero/Combo_Nha_Trang/6221737016110990168.jpg',
+      '/hero/Combo_Nha_Trang/6221737016110990169.jpg',
+      '/hero/Combo_Nha_Trang/6221737016110990170.jpg',
+      '/hero/Combo_Nha_Trang/6221737016110990171.jpg',
+      '/hero/Combo_Nha_Trang/6221737016110990172.jpg',
+      '/hero/Combo_Nha_Trang/6221737016110990173.jpg'
+    ],
+    schedules: [
+      {
+        title: '4N3Đ',
+        options: [
+          { range: '2/11-5/11', time: '(10H15-12H45)', price: 4590000 },
+          { range: '17/11-20/11', time: '(10H15-12H45)', price: 4590000 }
+        ]
+      },
+      {
+        title: '3N2Đ',
+        options: [
+          { range: '9/11-11/11', time: '(10H15-15H50)', price: 4190000 },
+          { range: '16/11-18/11', time: '(10H15-15H50)', price: 4190000 },
+          { range: '26/11-28/11', time: '(10H15-15H50)', price: 4190000 }
+        ]
+      }
+    ],
+    itinerary: [
+      { day: 1, title: 'Hà Nội – Nha Trang', summary: 'Bay Vietnam Airlines, nhận phòng khách sạn Xavia 4* khu trung tâm.' },
+      { day: 2, title: 'Khám phá biển đảo', summary: 'Tự do tắm biển, VinWonders, đảo Hòn Mun/Hòn Tằm (tự túc).' },
+      { day: 3, title: 'Ẩm thực Nha Trang', summary: 'Thưởng thức hải sản, cà phê biển, spa (tự túc).' },
+      { day: 4, title: 'Nha Trang – Hà Nội', summary: 'Trả phòng – ra sân bay. (Áp dụng gói 4N3Đ)'}
     ]
   }
 ];
 
 export const countries = [
-  { key: 'vietnam', name: 'Việt Nam' },
-  { key: 'china', name: 'Trung Quốc' },
-  { key: 'japan', name: 'Nhật Bản' },
-  { key: 'south-korea', name: 'Hàn Quốc' },
-  { key: 'france', name: 'Pháp' },
-  { key: 'thailand', name: 'Thái Lan' },
-  { key: 'usa', name: 'Hoa Kỳ' },
-  { key: 'italy', name: 'Ý' },
-  { key: 'australia', name: 'Úc' },
-  { key: 'canada', name: 'Canada' }
+  { key: 'vietnam', name: 'Việt Nam' }
 ];
 
 export const getToursByCountry = (countryKey) => {

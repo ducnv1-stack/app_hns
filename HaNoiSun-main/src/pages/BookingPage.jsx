@@ -20,6 +20,9 @@ const BookingPage = () => {
   const [bookingData, setBookingData] = useState({
     // Step 1 data
     selectedDate: '',
+    selectedSchedule: null,
+    selectedScheduleMeta: null,
+    priceOverrideAdult: null,
     passengers: {
       adults: 2,
       children: 0,
@@ -105,9 +108,16 @@ const BookingPage = () => {
     if (!tour) return 0;
     
     const { adults, children, infants } = bookingData.passengers;
-    const adultPrice = tour.pricing.adult * adults;
-    const childPrice = tour.pricing.child * children;
-    const infantPrice = tour.pricing.infant * infants;
+    const effectiveAdult = bookingData.priceOverrideAdult || tour.pricing.adult;
+    // giữ tỉ lệ giá trẻ em/em bé theo pricing gốc
+    const childRatio = tour.pricing.adult ? (tour.pricing.child / tour.pricing.adult) : 0.75;
+    const infantRatio = tour.pricing.adult ? (tour.pricing.infant / tour.pricing.adult) : 0;
+    const effectiveChild = Math.round(effectiveAdult * childRatio);
+    const effectiveInfant = Math.round(effectiveAdult * infantRatio);
+
+    const adultPrice = effectiveAdult * adults;
+    const childPrice = effectiveChild * children;
+    const infantPrice = effectiveInfant * infants;
     
     return adultPrice + childPrice + infantPrice;
   };

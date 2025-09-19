@@ -21,10 +21,15 @@ const BookingSummary = ({ tour, bookingData, totalPrice, currentStep }) => {
 
   const calculateBreakdown = () => {
     const { adults, children, infants } = bookingData.passengers;
+    const effectiveAdult = bookingData.priceOverrideAdult || tour.pricing.adult;
+    const childRatio = tour.pricing.adult ? (tour.pricing.child / tour.pricing.adult) : 0.75;
+    const infantRatio = tour.pricing.adult ? (tour.pricing.infant / tour.pricing.adult) : 0;
+    const effectiveChild = Math.round(effectiveAdult * childRatio);
+    const effectiveInfant = Math.round(effectiveAdult * infantRatio);
     return {
-      adults: { count: adults, price: tour.pricing.adult * adults },
-      children: { count: children, price: tour.pricing.child * children },
-      infants: { count: infants, price: tour.pricing.infant * infants }
+      adults: { count: adults, price: effectiveAdult * adults },
+      children: { count: children, price: effectiveChild * children },
+      infants: { count: infants, price: effectiveInfant * infants }
     };
   };
 
@@ -100,6 +105,18 @@ const BookingSummary = ({ tour, bookingData, totalPrice, currentStep }) => {
               <span className="text-gray-600">Ngày khởi hành:</span>
               <span className="font-medium">{formatDate(bookingData.selectedDate)}</span>
             </div>
+            {bookingData.selectedScheduleMeta && (
+              <>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Hành trình:</span>
+                  <span className="font-medium">{bookingData.selectedScheduleMeta.title}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Khung giờ:</span>
+                  <span className="font-medium">{String(bookingData.selectedScheduleMeta.time).replace(/[()]/g, '').replace(/H/g, ':')}</span>
+                </div>
+              </>
+            )}
             
             <div className="flex justify-between">
               <span className="text-gray-600">Số lượng khách:</span>

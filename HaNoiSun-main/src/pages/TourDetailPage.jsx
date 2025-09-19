@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Calendar, Clock, MapPin, Users, Star, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, Star, ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getTourById } from '../data/tours';
 
 const TourDetailPage = () => {
@@ -76,6 +76,26 @@ const TourDetailPage = () => {
                   <p className="text-gray-700 leading-relaxed">{tour.description}</p>
                 )}
               </div>
+            )}
+
+            {/* Hotel gallery for Combo Đà Nẵng */}
+            {tour.id === 1 && (
+              <GalleryDN />
+            )}
+
+            {/* Gallery + captions for Hang Ngọc Rồng */}
+            {tour.id === 2 && (
+              <GalleryNR />
+            )}
+
+            {/* Hotel gallery for Combo Quy Nhơn */}
+            {tour.id === 3 && (
+              <GalleryQN />
+            )}
+
+            {/* Hotel gallery for Combo Nha Trang */}
+            {tour.id === 4 && (
+              <GalleryNT tour={tour} />
             )}
 
             {/* Itinerary */}
@@ -175,5 +195,267 @@ const TourDetailPage = () => {
 };
 
 export default TourDetailPage;
+
+// Small gallery zone dedicated for Combo Đà Nẵng
+const GalleryDN = () => {
+  const images = useMemo(() => (
+    Array.from({ length: 8 }, (_, i) => `/hero/DN${i + 1}.jpg`)
+  ), []);
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 2000);
+    return () => clearInterval(id);
+  }, [images.length]);
+
+  const next = () => setIndex((prev) => (prev + 1) % images.length);
+  const prev = () => setIndex((prev) => (prev - 1 + images.length) % images.length);
+
+  return (
+    <div className="mt-6">
+      <h3 className="text-lg font-semibold mb-3">Hình ảnh khách sạn</h3>
+      <div className="relative rounded-2xl overflow-hidden shadow border border-gray-200">
+        <img
+          key={index}
+          src={images[index]}
+          alt={`Khách sạn Đà Nẵng ${index + 1}`}
+          className="w-full h-64 object-cover transition-opacity duration-500"
+        />
+        {/* Controls */}
+        <button
+          type="button"
+          onClick={prev}
+          aria-label="Ảnh trước"
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+        <button
+          type="button"
+          onClick={next}
+          aria-label="Ảnh sau"
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          <ChevronRight className="h-5 w-5" />
+        </button>
+        <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
+          {images.map((_, i) => (
+            <span
+              key={i}
+              className={`h-2 w-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/60'}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Hang Ngọc Rồng gallery with captions
+const GalleryNR = () => {
+  const slides = useMemo(() => ([
+    {
+      src: '/hero/NR1.jpg',
+      title: 'Cổng vào Hang Ngọc Rồng',
+      lines: [
+        'Khởi đầu hành trình khám phá với không gian kỳ vĩ của Cẩm Phả.',
+        'Thiết kế lấy cảm hứng từ truyền thuyết dân gian.',
+        'Điểm check-in nổi bật được yêu thích nhất.',
+        'Không khí biển trong lành, dễ chịu.'
+      ]
+    },
+    {
+      src: '/hero/NR2.jpg',
+      title: 'Lối đi vào hang',
+      lines: [
+        'Con đường uốn lượn giữa núi đá vôi và hệ sinh thái tự nhiên.',
+        'Ánh sáng phản chiếu tạo nên bức tranh huyền ảo.',
+        'Thích hợp cho các nhóm gia đình và bạn bè.',
+        'Hành trình an toàn với lối đi rõ ràng, dễ dàng.'
+      ]
+    },
+    {
+      src: '/hero/NR3.jpg',
+      title: 'Không gian bên trong',
+      lines: [
+        'Những khối thạch nhũ nhiều hình thù độc đáo.',
+        'Nhiệt độ mát lạnh quanh năm giúp thư thái.',
+        'Âm vang tự nhiên khiến từng bước chân thêm thú vị.',
+        'Khu vực được chiếu sáng nhẹ để đảm bảo trải nghiệm.'
+      ]
+    },
+    {
+      src: '/hero/NR4.jpg',
+      title: 'Sân khấu thực cảnh',
+      lines: [
+        'Show “Đi tìm dấu ngọc” kết hợp âm thanh – ánh sáng sống động.',
+        'Cốt truyện đậm chất huyền thoại vùng Đông Bắc.',
+        'Ghế ngồi thoải mái, tầm nhìn bao quát.',
+        'Phù hợp cho cả người lớn và trẻ nhỏ.'
+      ]
+    },
+    {
+      src: '/hero/NR5.jpg',
+      title: 'Ẩm thực Quảng Ninh',
+      lines: [
+        'Thưởng thức hải sản tươi ngon sau giờ tham quan.',
+        'Món ăn địa phương phong phú: chả mực, sam biển, sá sùng.',
+        'Không gian sạch sẽ, phục vụ chu đáo.',
+        'Lựa chọn đa dạng cho nhiều khẩu vị.'
+      ]
+    }
+  ]), []);
+
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setI((p) => (p + 1) % slides.length), 3000);
+    return () => clearInterval(id);
+  }, [slides.length]);
+
+  return (
+    <div className="mt-6">
+      <h3 className="text-lg font-semibold mb-3">Khám phá Hang Ngọc Rồng</h3>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
+        <div className="relative rounded-2xl overflow-hidden shadow border border-gray-200">
+          <img src={slides[i].src} alt={slides[i].title} className="w-full h-64 object-cover" />
+          <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
+            {slides.map((_, idx) => (
+              <span key={idx} className={`h-2 w-2 rounded-full ${idx === i ? 'bg-white' : 'bg-white/60'}`} />
+            ))}
+          </div>
+        </div>
+        <div className="bg-white rounded-2xl border border-gray-200 p-5 shadow">
+          <div className="text-sm text-gray-500 mb-1">DAY {i + 1}</div>
+          <div className="text-xl font-semibold mb-3">{slides[i].title}</div>
+          <div className="space-y-2 text-gray-700 leading-relaxed">
+            {slides[i].lines.map((t, idx) => (
+              <p key={idx}>{t}</p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Quy Nhơn hotel gallery (autoplay 3s + controls)
+const GalleryQN = () => {
+  const images = useMemo(() => (
+    Array.from({ length: 7 }, (_, i) => `/hero/QN${i + 1}.jpg`)
+  ), []);
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(id);
+  }, [images.length]);
+
+  const next = () => setIndex((prev) => (prev + 1) % images.length);
+  const prev = () => setIndex((prev) => (prev - 1 + images.length) % images.length);
+
+  return (
+    <div className="mt-6">
+      <h3 className="text-lg font-semibold mb-3">Hình ảnh khách sạn Quy Nhơn</h3>
+      <div className="relative rounded-2xl overflow-hidden shadow border border-gray-200">
+        <img
+          key={index}
+          src={images[index]}
+          alt={`Khách sạn Quy Nhơn ${index + 1}`}
+          className="w-full h-64 object-cover transition-opacity duration-500"
+        />
+        <button
+          type="button"
+          onClick={prev}
+          aria-label="Ảnh trước"
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+        <button
+          type="button"
+          onClick={next}
+          aria-label="Ảnh sau"
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          <ChevronRight className="h-5 w-5" />
+        </button>
+        <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
+          {images.map((_, i) => (
+            <span key={i} className={`h-2 w-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/60'}`} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Nha Trang hotel gallery (autoplay 3s + controls)
+const GalleryNT = ({ tour }) => {
+  const images = useMemo(() => (
+    Array.isArray(tour?.gallery) ? tour.gallery : []
+  ), [tour]);
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(id);
+  }, [images.length]);
+
+  const next = () => setIndex((prev) => (prev + 1) % images.length);
+  const prev = () => setIndex((prev) => (prev - 1 + images.length) % images.length);
+
+  if (images.length === 0) {
+    return (
+      <div className="mt-6">
+        <h3 className="text-lg font-semibold mb-3">Hình ảnh khách sạn Nha Trang</h3>
+        <div className="text-sm text-gray-500">Chưa có ảnh. Vui lòng bổ sung danh sách đường dẫn trong trường gallery của combo Nha Trang.</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-6">
+      <h3 className="text-lg font-semibold mb-3">Hình ảnh khách sạn Nha Trang</h3>
+      <div className="relative rounded-2xl overflow-hidden shadow border border-gray-200">
+        <img
+          key={index}
+          src={images[index]}
+          alt={`Khách sạn Nha Trang ${index + 1}`}
+          className="w-full h-64 object-cover transition-opacity duration-500"
+        />
+        <button
+          type="button"
+          onClick={prev}
+          aria-label="Ảnh trước"
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+        <button
+          type="button"
+          onClick={next}
+          aria-label="Ảnh sau"
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          <ChevronRight className="h-5 w-5" />
+        </button>
+        <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
+          {images.map((_, i) => (
+            <span key={i} className={`h-2 w-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/60'}`} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 

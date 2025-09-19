@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
-import { Calendar, Users, Plus, Minus, Info, Star, MapPin, Clock } from 'lucide-react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Calendar, Users, Plus, Minus, Info, Star, MapPin, Clock, CheckCircle } from 'lucide-react';
 
 const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
   const [selectedDate, setSelectedDate] = useState(bookingData.selectedDate);
   const [passengers, setPassengers] = useState(bookingData.passengers);
+  const hasSchedules = Array.isArray(tour.schedules) && tour.schedules.length > 0;
+  const [activeScheduleTab, setActiveScheduleTab] = useState(0);
+  const [selectedSchedule, setSelectedSchedule] = useState(bookingData.selectedSchedule || { groupIndex: 0, optionIndex: 0 });
 
   const formatPrice = (price) => {
     return new Intl.NumberFormat('vi-VN', {
@@ -13,6 +16,9 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
   };
 
   const formatDate = (dateString) => {
+    if (!dateString) return '';
+    // If date is already a human-friendly range (contains arrow), return as-is
+    if (String(dateString).includes('→')) return dateString;
     return new Date(dateString).toLocaleDateString('vi-VN', {
       weekday: 'long',
       day: '2-digit',
@@ -20,6 +26,62 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
       year: 'numeric'
     });
   };
+
+  const formatCurrency = (price) => new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+
+  const getDisplayTime = (rawTime) => {
+    if (!rawTime) return '';
+    const cleaned = String(rawTime).replace(/[()]/g, '').replace(/H/g, ':');
+    const parts = cleaned.split('-');
+    if (parts.length === 2) return `${parts[0]} - ${parts[1]}`;
+    return cleaned;
+  };
+
+  const getDisplayRange = (rawRange) => {
+    if (!rawRange) return '';
+    const parts = String(rawRange).split('-');
+    const start = parts[0];
+    const end = parts[1] || '';
+    const hasYear = end.includes('/');
+    if (hasYear) return `${start}/2025 → ${end}`; // end đã có năm
+    return `${start}/2025 → ${end}/2025`;
+  };
+
+  // Initialize default schedule selection if schedules are provided
+  useEffect(() => {
+    if (!hasSchedules) return;
+    const safeGroupIdx = Math.min(activeScheduleTab, tour.schedules.length - 1);
+    const group = tour.schedules[safeGroupIdx] || tour.schedules[0];
+    const option = group?.options?.[0];
+    if (!option) return;
+    const dateLabel = `${getDisplayRange(option.range)} ${getDisplayTime(option.time)}`;
+    setSelectedDate(prev => prev || dateLabel);
+    // Initialize booking override so summary reflects current tab by default
+    onUpdateData({
+      selectedDate: dateLabel,
+      selectedSchedule: { groupIndex: safeGroupIdx, optionIndex: 0 },
+      priceOverrideAdult: option.price,
+      selectedScheduleMeta: { title: group.title, range: option.range, time: option.time, price: option.price }
+    });
+    setSelectedSchedule({ groupIndex: safeGroupIdx, optionIndex: 0 });
+  }, [hasSchedules]);
+
+  // When user switches tabs, default to first option of that tab and update booking data
+  useEffect(() => {
+    if (!hasSchedules) return;
+    const group = tour.schedules[activeScheduleTab];
+    const option = group?.options?.[0];
+    if (!option) return;
+    const dateLabel = `${getDisplayRange(option.range)} ${getDisplayTime(option.time)}`;
+    setSelectedSchedule({ groupIndex: activeScheduleTab, optionIndex: 0 });
+    setSelectedDate(dateLabel);
+    onUpdateData({
+      selectedDate: dateLabel,
+      selectedSchedule: { groupIndex: activeScheduleTab, optionIndex: 0 },
+      priceOverrideAdult: option.price,
+      selectedScheduleMeta: { title: group.title, range: option.range, time: option.time, price: option.price }
+    });
+  }, [activeScheduleTab]);
 
   const updatePassengerCount = (type, increment) => {
     const newPassengers = { ...passengers };
@@ -37,10 +99,27 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
     setPassengers(newPassengers);
   };
 
+  const effectiveAdultPrice = useMemo(() => {
+    // Prefer current tab & selection when schedules are present
+    if (hasSchedules) {
+      const group = tour.schedules[activeScheduleTab];
+      const opt = group?.options?.[selectedSchedule.optionIndex] || group?.options?.[0];
+      if (opt?.price) return opt.price;
+    }
+    // Fallback to any override (e.g., when returning to this step)
+    if (bookingData.priceOverrideAdult) return bookingData.priceOverrideAdult;
+    return tour.pricing.adult;
+  }, [hasSchedules, tour.schedules, activeScheduleTab, selectedSchedule.optionIndex, bookingData.priceOverrideAdult, tour.pricing.adult]);
+
   const calculateSubtotal = () => {
-    const adultPrice = tour.pricing.adult * passengers.adults;
-    const childPrice = tour.pricing.child * passengers.children;
-    const infantPrice = tour.pricing.infant * passengers.infants;
+    const priceAdult = effectiveAdultPrice;
+    const childRatio = tour.pricing.adult ? (tour.pricing.child / tour.pricing.adult) : 0.75;
+    const infantRatio = tour.pricing.adult ? (tour.pricing.infant / tour.pricing.adult) : 0;
+    const priceChild = Math.round(priceAdult * childRatio);
+    const priceInfant = Math.round(priceAdult * infantRatio);
+    const adultPrice = priceAdult * passengers.adults;
+    const childPrice = priceChild * passengers.children;
+    const infantPrice = priceInfant * passengers.infants;
     return adultPrice + childPrice + infantPrice;
   };
 
@@ -53,6 +132,27 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
   };
 
   const isFormValid = selectedDate && (passengers.adults > 0);
+
+  const handleSelectSchedule = (groupIndex, optionIndex) => {
+    setActiveScheduleTab(groupIndex);
+    setSelectedSchedule({ groupIndex, optionIndex });
+    const group = tour.schedules[groupIndex];
+    const opt = group.options[optionIndex];
+    const dateLabel = `${getDisplayRange(opt.range)} ${getDisplayTime(opt.time)}`;
+    setSelectedDate(dateLabel);
+    // Update parent booking data immediately to reflect price override
+    onUpdateData({
+      selectedDate: dateLabel,
+      selectedSchedule: { groupIndex, optionIndex },
+      priceOverrideAdult: opt.price,
+      selectedScheduleMeta: {
+        title: group.title,
+        range: opt.range,
+        time: opt.time,
+        price: opt.price
+      }
+    });
+  };
 
   return (
     <div className="space-y-8">
@@ -94,28 +194,89 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
         </div>
       </div>
 
-      {/* Date Selection */}
+      {/* Date/Schedule Selection */}
       <div>
         <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
           <Calendar className="h-5 w-5 mr-2 text-primary-600" />
           Chọn Ngày Khởi Hành
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {tour.availableDates.map((date) => (
-            <button
-              key={date}
-              onClick={() => setSelectedDate(date)}
-              className={`p-4 border-2 rounded-lg text-left transition-all duration-200 ${
-                selectedDate === date
-                  ? 'border-primary-500 bg-primary-50 text-primary-700'
-                  : 'border-gray-200 hover:border-gray-300 text-gray-700'
-              }`}
-            >
-              <div className="font-medium">{formatDate(date)}</div>
-              <div className="text-sm text-gray-500 mt-1">Còn chỗ</div>
-            </button>
-          ))}
-        </div>
+
+        {hasSchedules ? (
+          <div>
+            {/* Tabs */}
+            <div className="flex gap-3 mb-4 border-b">
+              {tour.schedules.map((g, idx) => (
+                <button
+                  key={g.title}
+                  onClick={() => setActiveScheduleTab(idx)}
+                  className={`px-4 py-2 -mb-px border-b-2 font-medium transition-colors ${
+                    activeScheduleTab === idx
+                      ? 'border-primary-600 text-primary-700'
+                      : 'border-transparent text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  {g.title}
+                </button>
+              ))}
+            </div>
+
+            {/* Common flight time */}
+            <div className="text-sm text-gray-600 mb-3">
+              ✈️ Giờ bay: <span className="font-medium">{getDisplayTime(tour.schedules[activeScheduleTab]?.options?.[0]?.time)}</span>
+            </div>
+
+            {/* Options list */}
+            <div className="space-y-3">
+              {(tour.schedules[activeScheduleTab]?.options || []).map((opt, idx) => {
+                const selected = selectedSchedule.groupIndex === activeScheduleTab && selectedSchedule.optionIndex === idx;
+                return (
+                  <button
+                    type="button"
+                    key={`${opt.range}-${idx}`}
+                    onClick={() => handleSelectSchedule(activeScheduleTab, idx)}
+                    className={`w-full flex items-center justify-between p-4 rounded-xl border transition-colors text-left ${
+                      selected ? 'border-primary-500 bg-primary-50' : 'border-gray-200 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Calendar className="h-5 w-5 text-gray-600" />
+                      <div>
+                        <div className="font-medium text-gray-900">{getDisplayRange(opt.range)}</div>
+                        <div className="text-xs text-gray-500">{getDisplayTime(opt.time)}</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                      <div className="text-right">
+                        <div className="font-bold text-green-600">{formatCurrency(opt.price)}</div>
+                      </div>
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${selected ? 'border-primary-600' : 'border-gray-300'}`}>
+                        {selected && <CheckCircle className="h-4 w-4 text-primary-600" />}
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {tour.availableDates.map((date) => (
+              <button
+                key={date}
+                onClick={() => setSelectedDate(date)}
+                className={`p-4 border-2 rounded-lg text-left transition-all duration-200 ${
+                  selectedDate === date
+                    ? 'border-primary-500 bg-primary-50 text-primary-700'
+                    : 'border-gray-200 hover:border-gray-300 text-gray-700'
+                }`}
+              >
+                <div className="font-medium">{formatDate(date)}</div>
+                <div className="text-sm text-gray-500 mt-1">Còn chỗ</div>
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Passenger Selection */}
@@ -132,7 +293,7 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
               <div className="font-medium text-gray-900">Người lớn</div>
               <div className="text-sm text-gray-500">Từ 12 tuổi trở lên</div>
               <div className="text-sm font-medium text-primary-600 mt-1">
-                {formatPrice(tour.pricing.adult)} / người
+                {formatPrice(effectiveAdultPrice)} / người
               </div>
             </div>
             <div className="flex items-center space-x-3">
@@ -216,7 +377,7 @@ const BookingStep1 = ({ tour, bookingData, onUpdateData, onNext }) => {
           {passengers.adults > 0 && (
             <div className="flex justify-between">
               <span>Người lớn ({passengers.adults})</span>
-              <span>{formatPrice(tour.pricing.adult * passengers.adults)}</span>
+              <span>{formatPrice(effectiveAdultPrice * passengers.adults)}</span>
             </div>
           )}
           {passengers.children > 0 && (

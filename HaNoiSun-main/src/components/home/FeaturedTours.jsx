@@ -8,8 +8,8 @@ const FeaturedTours = () => {
   const [favorites, setFavorites] = useState(new Set());
 
   const featuredTours = useMemo(() => {
-    const ids = [1, 2, 3, 7, 9, 10];
-    return sharedTours.filter(t => ids.includes(t.id)).map(t => ({
+    // Hiển thị tất cả các combo hiện có (toàn bộ dữ liệu hiện là combo)
+    return sharedTours.map(t => ({
       ...t,
       isLuxury: t.category === 'luxury'
     }));
@@ -53,10 +53,10 @@ const FeaturedTours = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Tours Nổi Bật
+            Combo Nổi Bật
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Khám phá những điểm đến tuyệt vời nhất với các tour du lịch được lựa chọn kỹ càng
+            Các gói combo ưu đãi gồm vé máy bay/khách sạn/vé tham quan được chọn lọc
           </p>
         </div>
 
@@ -200,7 +200,7 @@ const FeaturedTours = () => {
         {/* View All Button */}
         <div className="text-center mt-12">
           <Link to="/tours" className="btn-secondary">
-            Xem Tất Cả Tours
+            Xem Tất Cả Combo
           </Link>
         </div>
       </div>
