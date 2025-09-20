@@ -98,8 +98,8 @@ const TourDetailPage = () => {
               <GalleryNT tour={tour} />
             )}
 
-            {/* Itinerary */}
-            {Array.isArray(tour.itinerary) && tour.itinerary.length > 0 && (
+            {/* Itinerary (hidden for Hang Ngọc Rồng) */}
+            {Array.isArray(tour.itinerary) && tour.itinerary.length > 0 && tour.id !== 2 && (
               <div className="mt-6">
                 <h3 className="text-xl font-semibold mb-3">Lịch trình chi tiết</h3>
                 <div className="space-y-3">
@@ -278,7 +278,7 @@ const GalleryNR = () => {
       ]
     },
     {
-      src: '/hero/NR3.jpg',
+      src: '/hero/nr3.jpg',
       title: 'Không gian bên trong',
       lines: [
         'Những khối thạch nhũ nhiều hình thù độc đáo.',
@@ -315,12 +315,32 @@ const GalleryNR = () => {
     return () => clearInterval(id);
   }, [slides.length]);
 
+  const next = () => setI((p) => (p + 1) % slides.length);
+  const prev = () => setI((p) => (p - 1 + slides.length) % slides.length);
+
   return (
     <div className="mt-6">
       <h3 className="text-lg font-semibold mb-3">Khám phá Hang Ngọc Rồng</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
         <div className="relative rounded-2xl overflow-hidden shadow border border-gray-200">
           <img src={slides[i].src} alt={slides[i].title} className="w-full h-64 object-cover" />
+          {/* Controls */}
+          <button
+            type="button"
+            onClick={prev}
+            aria-label="Ảnh trước"
+            className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            onClick={next}
+            aria-label="Ảnh sau"
+            className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
           <div className="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2">
             {slides.map((_, idx) => (
               <span key={idx} className={`h-2 w-2 rounded-full ${idx === i ? 'bg-white' : 'bg-white/60'}`} />
@@ -328,7 +348,6 @@ const GalleryNR = () => {
           </div>
         </div>
         <div className="bg-white rounded-2xl border border-gray-200 p-5 shadow">
-          <div className="text-sm text-gray-500 mb-1">DAY {i + 1}</div>
           <div className="text-xl font-semibold mb-3">{slides[i].title}</div>
           <div className="space-y-2 text-gray-700 leading-relaxed">
             {slides[i].lines.map((t, idx) => (

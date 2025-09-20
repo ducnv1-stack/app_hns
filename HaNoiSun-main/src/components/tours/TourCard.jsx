@@ -141,7 +141,7 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
 
   // Grid view (default)
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover group">
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover group h-full flex flex-col">
       {/* Tour Image */}
       <div className="relative overflow-hidden">
         <img
@@ -175,8 +175,9 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
       </div>
 
       {/* Tour Content */}
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-2">
+      <div className="p-6 flex flex-col h-full">
+        <div className="flex-grow">
+          <div className="flex items-center justify-between mb-2">
           <div className="flex items-center space-x-1">
             <Star className="h-4 w-4 text-yellow-400 fill-current" />
             <span className="text-sm font-medium text-gray-900">{tour.rating}</span>
@@ -186,45 +187,46 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
             <MapPin className="h-4 w-4 mr-1" />
             <span className="truncate max-w-32">{tour.location}</span>
           </div>
-        </div>
-
-        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2">
-          <Link to={`/tours/${tour.id}`}>{tour.title}</Link>
-        </h3>
-
-        <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
-          <div className="flex items-center">
-            <Clock className="h-4 w-4 mr-1" />
-            <span>{tour.duration}</span>
           </div>
-          <div className="flex items-center">
-            <Users className="h-4 w-4 mr-1" />
-            <span>{tour.groupSize}</span>
+
+          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2 min-h-[56px]">
+            <Link to={`/tours/${tour.id}`}>{tour.title}</Link>
+          </h3>
+
+          <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
+            <div className="flex items-center">
+              <Clock className="h-4 w-4 mr-1" />
+              <span>{tour.duration}</span>
+            </div>
+            <div className="flex items-center">
+              <Users className="h-4 w-4 mr-1" />
+              <span>{tour.groupSize}</span>
+            </div>
           </div>
-        </div>
 
-        {/* Departure Date */}
-        <div className="flex items-center text-sm text-gray-600 mb-4">
-          <Calendar className="h-4 w-4 mr-1" />
-          <span>Khởi hành: {formatDate(tour.departureDate)}</span>
-        </div>
+          {/* Departure Date */}
+          <div className="flex items-center text-sm text-gray-600 mb-4">
+            <Calendar className="h-4 w-4 mr-1" />
+            <span>Khởi hành: {formatDate(tour.departureDate)}</span>
+          </div>
 
-        {/* Highlights */}
-        <div className="mb-4">
-          <div className="flex flex-wrap gap-2">
-            {tour.highlights.slice(0, 2).map((highlight, index) => (
-              <span
-                key={index}
-                className="text-xs bg-primary-50 text-primary-700 px-2 py-1 rounded-full"
-              >
-                {highlight}
-              </span>
-            ))}
-            {tour.highlights.length > 2 && (
-              <span className="text-xs text-gray-500">
-                +{tour.highlights.length - 2} khác
-              </span>
-            )}
+          {/* Highlights */}
+          <div className="mb-4">
+            <div className="flex flex-wrap gap-2">
+              {tour.highlights.slice(0, 2).map((highlight, index) => (
+                <span
+                  key={index}
+                  className="text-xs bg-primary-50 text-primary-700 px-2 py-1 rounded-full"
+                >
+                  {highlight}
+                </span>
+              ))}
+              {tour.highlights.length > 2 && (
+                <span className="text-xs text-gray-500">
+                  +{tour.highlights.length - 2} khác
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
@@ -251,7 +253,7 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
         {/* CTA Button */}
         <Link 
           to={`/booking/${tour.id}`}
-          className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 group"
+          className="mt-auto w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 group"
         >
           <span>Đặt Tour Ngay</span>
           <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

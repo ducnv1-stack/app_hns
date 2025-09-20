@@ -82,7 +82,7 @@ const FeaturedTours = () => {
           {filteredTours.map((tour) => (
             <div
               key={tour.id}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover group h-full flex flex-col"
             >
               {/* Tour Image */}
               <div className="relative overflow-hidden">
@@ -120,8 +120,9 @@ const FeaturedTours = () => {
               </div>
 
               {/* Tour Content */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-2">
+              <div className="p-6 flex flex-col h-full">
+                <div className="flex-grow">
+                  <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center space-x-1">
                     <Star className="h-4 w-4 text-yellow-400 fill-current" />
                     <span className="text-sm font-medium text-gray-900">{tour.rating}</span>
@@ -131,11 +132,11 @@ const FeaturedTours = () => {
                     <MapPin className="h-4 w-4 mr-1" />
                     <span>{tour.location}</span>
                   </div>
-                </div>
+                  </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
-                  <Link to={`/tours/${tour.id}`}>{tour.title}</Link>
-                </h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2 min-h-[56px]">
+                    <Link to={`/tours/${tour.id}`}>{tour.title}</Link>
+                  </h3>
 
                 <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
                   <div className="flex items-center">
@@ -166,6 +167,7 @@ const FeaturedTours = () => {
                     )}
                   </div>
                 </div>
+                </div>
 
                 {/* Price */}
                 <div className="flex items-center justify-between mb-4">
@@ -187,7 +189,7 @@ const FeaturedTours = () => {
                 {/* CTA Button */}
                 <Link 
                   to={`/booking/${tour.id}`}
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 group"
+                  className="mt-auto w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 group"
                 >
                   <span>Đặt Tour Ngay</span>
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
