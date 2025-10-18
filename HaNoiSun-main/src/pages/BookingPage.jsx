@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { getTourById } from '../data/tours';
+import { useTours } from '../hooks/useTours';
+import { bookingService } from '../services/bookingService';
+import { useAuth } from '../context/AuthContext';
 import { ArrowLeft, ArrowRight, Check, Calendar, Users, CreditCard, FileText, Download, Home, Eye } from 'lucide-react';
 import BookingStep1 from '../components/booking/BookingStep1';
 import BookingStep2 from '../components/booking/BookingStep2';
@@ -9,12 +12,14 @@ import BookingStep4 from '../components/booking/BookingStep4';
 import BookingSummary from '../components/booking/BookingSummary';
 
 const BookingPage = () => {
-  const { tourId } = useParams();
+  const { tourId: slugOrId } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  const { user } = useAuth();
   const [currentStep, setCurrentStep] = useState(1);
   const [loading, setLoading] = useState(true);
   const [tour, setTour] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
 
   // Booking data state
   const [bookingData, setBookingData] = useState({
@@ -83,7 +88,7 @@ const BookingPage = () => {
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
-      const foundTour = getTourById(tourId);
+      const foundTour = getTourById(slugOrId);
       if (foundTour) {
         setTour(foundTour);
         setBookingData(prev => ({
@@ -95,7 +100,7 @@ const BookingPage = () => {
       }
       setLoading(false);
     }, 400);
-  }, [tourId, navigate]);
+  }, [slugOrId, navigate]);
 
   const updateBookingData = (stepData) => {
     setBookingData(prev => ({
@@ -136,6 +141,45 @@ const BookingPage = () => {
 
   const goToStep = (step) => {
     setCurrentStep(step);
+  };
+
+  const handleSubmitBooking = async () => {
+    if (!user) {
+      navigate('/login', { state: { from: location } });
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const bookingPayload = {
+        serviceId: tour.id,
+        selectedDate: bookingData.selectedDate,
+        selectedSchedule: bookingData.selectedSchedule,
+        passengers: bookingData.passengers,
+        contactInfo: bookingData.contactInfo,
+        passengerDetails: bookingData.passengerDetails,
+        paymentMethod: bookingData.paymentMethod,
+        totalPrice: calculateTotalPrice(),
+        status: 'pending'
+      };
+
+      const result = await bookingService.createBooking(bookingPayload);
+      
+      // Update booking data with server response
+      setBookingData(prev => ({
+        ...prev,
+        bookingId: result.bookingId,
+        bookingStatus: result.status
+      }));
+      
+      // Move to confirmation step
+      setCurrentStep(4);
+    } catch (error) {
+      console.error('Booking submission failed:', error);
+      alert('Có lỗi xảy ra khi đặt tour. Vui lòng thử lại.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (loading) {

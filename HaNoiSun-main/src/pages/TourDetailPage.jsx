@@ -1,28 +1,44 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Calendar, Clock, MapPin, Users, Star, ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
-import { getTourById } from '../data/tours';
+import { useTour } from '../hooks/useTours';
+import TourSchedule from '../components/tours/TourSchedule';
+import ImageSlideshow from '../components/common/ImageSlideshow';
+import { config } from '../config/env';
 
 const TourDetailPage = () => {
-  const { tourId } = useParams();
+  const { slugOrId } = useParams();
   const navigate = useNavigate();
-  const [tour, setTour] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const { tour, loading, error } = useTour(slugOrId);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      const found = getTourById(tourId);
-      if (!found) {
-        navigate('/tours');
-      } else {
-        setTour(found);
-      }
-      setLoading(false);
-    }, 200);
-  }, [tourId, navigate]);
+    if (error) {
+      navigate('/tours');
+    }
+  }, [error, navigate]);
 
   const formatPrice = (price) => new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+
+  // Get all images for slideshow
+  const getTourImages = () => {
+    if (!tour) return [{ image_url: '/hero/halong.jpg', alt: 'Tour image' }];
+    
+    if (tour.images && Array.isArray(tour.images) && tour.images.length > 0) {
+      return tour.images.map(img => ({
+        image_url: img.image_url?.startsWith('http') 
+          ? img.image_url 
+          : `${config.API_BASE_URL.replace(/\/api$/, '')}${img.image_url}`,
+        alt: img.alt || tour.name || 'Tour image',
+        is_primary: img.is_primary
+      }));
+    }
+    
+    // Fallback to single image
+    return [{ 
+      image_url: tour.image || '/hero/halong.jpg', 
+      alt: tour.name || 'Tour image' 
+    }];
+  };
 
   if (loading) {
     return (
@@ -35,7 +51,25 @@ const TourDetailPage = () => {
     );
   }
 
-  if (!tour) return null;
+  if (error || !tour) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-red-500 mb-4">
+            <Calendar className="h-16 w-16 mx-auto" />
+          </div>
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Không tìm thấy tour</h3>
+          <p className="text-gray-600 mb-6">{error || 'Tour không tồn tại'}</p>
+          <button 
+            onClick={() => navigate('/tours')} 
+            className="btn-primary"
+          >
+            Quay lại danh sách tour
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -45,7 +79,7 @@ const TourDetailPage = () => {
             <ArrowLeft className="h-5 w-5" />
             <span>Quay lại</span>
           </button>
-          <h1 className="text-2xl font-bold text-gray-900">{tour.title}</h1>
+          <h1 className="text-2xl font-bold text-gray-900">{tour.name}</h1>
           <div className="w-24" />
         </div>
       </div>
@@ -53,7 +87,15 @@ const TourDetailPage = () => {
       {/* Hero */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 bg-white rounded-2xl shadow overflow-hidden">
-          <img src={tour.image} alt={tour.title} className="w-full h-80 object-cover" />
+          {/* Image Slideshow */}
+          <ImageSlideshow 
+            images={getTourImages()}
+            interval={3000}
+            showControls={true}
+            autoPlay={true}
+            aspectRatio="aspect-[16/9]"
+            className="w-full"
+          />
           <div className="p-6">
             <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-4">
               <span className="flex items-center"><MapPin className="h-4 w-4 mr-1" />{tour.location}</span>
@@ -176,15 +218,20 @@ const TourDetailPage = () => {
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
-          <div className="bg-white rounded-2xl shadow p-6 sticky top-24">
-            <div className="text-2xl font-bold text-primary-600 mb-1">{formatPrice(tour.price)}</div>
-            {tour.originalPrice && (
-              <div className="text-sm text-gray-500 line-through mb-4">{formatPrice(tour.originalPrice)}</div>
-            )}
-            <div className="text-sm text-gray-600 flex items-center mb-4">
-              <Calendar className="h-4 w-4 mr-1" /> Nhiều ngày khởi hành
+          <div className="bg-white rounded-2xl shadow p-6 sticky top-24 space-y-6">
+            {/* Price Info */}
+            <div>
+              <div className="text-2xl font-bold text-primary-600 mb-1">
+                {formatPrice(tour.min_price)} - {formatPrice(tour.max_price)}
+              </div>
+              <div className="text-sm text-gray-500 mb-4">/ người</div>
             </div>
-            <Link to={`/booking/${tour.id}`} className="w-full inline-flex items-center justify-center btn-primary">
+
+            {/* Schedule Info */}
+            <TourSchedule tourId={slugOrId} />
+
+            {/* Booking Button */}
+            <Link to={`/booking/${slugOrId}`} className="w-full inline-flex items-center justify-center btn-primary">
               Đặt Tour Ngay
             </Link>
           </div>

@@ -224,7 +224,28 @@ const BookingStep4 = ({ tour, bookingData, totalPrice, onStartOver }) => {
       </div>
 
       {/* Action Buttons */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Payment Button - Only show if payment method is online */}
+        {bookingData.paymentMethod === 'online' && (
+          <button
+            onClick={() => navigate(`/payment/${bookingId}`, { 
+              state: { 
+                bookingData: {
+                  ...bookingData,
+                  id: bookingId,
+                  tourTitle: tour.title,
+                  totalPrice: totalPrice,
+                  currency: 'VND'
+                }
+              }
+            })}
+            className="flex items-center justify-center space-x-2 bg-orange-600 hover:bg-orange-700 text-white font-medium py-4 px-6 rounded-lg transition-colors"
+          >
+            <CreditCard className="h-5 w-5" />
+            <span>Thanh toán ngay</span>
+          </button>
+        )}
+
         <button
           onClick={downloadVoucher}
           className="flex items-center justify-center space-x-2 bg-primary-600 hover:bg-primary-700 text-white font-medium py-4 px-6 rounded-lg transition-colors"

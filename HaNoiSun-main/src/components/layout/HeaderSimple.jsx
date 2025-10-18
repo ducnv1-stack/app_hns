@@ -1,42 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, Search, Phone, Mail, ChevronDown, User, LogOut, Settings, Bell } from 'lucide-react';
+import { Menu, X, Search, Phone, Mail, ChevronDown, User, LogOut, Settings } from 'lucide-react';
 import MegaDropdown from './MegaDropdown';
 import { useAuth } from '../../context/AuthContext';
-import { useNotification } from '../../context/NotificationContext';
-import { LogIn } from 'lucide-react';
 
-const Header = () => {
+const HeaderSimple = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMegaDropdownOpen, setIsMegaDropdownOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, logout, login } = useAuth();
-  const { notifications, unreadCount, markAsRead, isLoading } = useNotification();
-
-  // Debug logging
-  useEffect(() => {
-    console.log('Header Debug:', {
-      user: user ? 'logged in' : 'not logged in',
-      notificationsCount: notifications.length,
-      unreadCount,
-      isLoading
-    });
-  }, [user, notifications.length, unreadCount, isLoading]);
-
-  const formatTime = (timeString) => {
-    const now = new Date();
-    const time = new Date(timeString);
-    const diffInMinutes = Math.floor((now - time) / (1000 * 60));
-
-    if (diffInMinutes < 1) return 'Vừa xong';
-    if (diffInMinutes < 60) return `${diffInMinutes} phút trước`;
-    if (diffInMinutes < 1440) return `${Math.floor(diffInMinutes / 60)} giờ trước`;
-    return `${Math.floor(diffInMinutes / 1440)} ngày trước`;
-  };
+  const { user, logout } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,24 +21,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isUserMenuOpen && !event.target.closest('.user-menu')) {
-        setIsUserMenuOpen(false);
-      }
-      if (isMegaDropdownOpen && !event.target.closest('.mega-dropdown')) {
-        setIsMegaDropdownOpen(false);
-      }
-      if (isNotificationOpen && !event.target.closest('.notification-dropdown')) {
-        setIsNotificationOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isUserMenuOpen, isMegaDropdownOpen, isNotificationOpen]);
 
   const navigation = [
     { name: 'Trang Chủ', href: '/' },
@@ -78,11 +35,6 @@ const Header = () => {
 
   const handleToursLeave = () => {
     setIsMegaDropdownOpen(false);
-  };
-
-  const handleQuickLogin = () => {
-    console.log('🚀 Quick login clicked');
-    navigate('/login');
   };
 
   const closeMegaDropdown = () => {
@@ -119,8 +71,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className={`sticky top-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
-        }`}>
+      <header className={`sticky top-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -155,8 +106,7 @@ const Header = () => {
                   >
                     <span>{item.name}</span>
                     {item.hasMegaMenu && (
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMegaDropdownOpen ? 'rotate-180' : ''
-                        }`} />
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMegaDropdownOpen ? 'rotate-180' : ''}`} />
                     )}
                   </Link>
 
@@ -176,135 +126,10 @@ const Header = () => {
               <button className="p-2 text-gray-600 hover:text-primary-600 transition-colors">
                 <Search className="h-5 w-5" />
               </button>
-
-              {/* Notification Center - ALWAYS VISIBLE */}
-              <div className="relative notification-dropdown">
-                  <button
-                    onClick={() => {
-                      console.log('🔔 Notification bell clicked, isOpen:', !isNotificationOpen);
-                      setIsNotificationOpen(!isNotificationOpen);
-                    }}
-                    className="relative p-2 text-gray-600 hover:text-primary-600 transition-colors border-2 border-transparent hover:border-primary-200 rounded-lg"
-                    title={`🔔 Thông báo (${unreadCount || 0} chưa đọc)`}
-                  >
-                    <Bell className="h-6 w-6" />
-                    {(unreadCount > 0) && (
-                      <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center animate-pulse">
-                        {unreadCount > 99 ? '99+' : unreadCount}
-                      </span>
-                    )}
-                  </button>
-
-                  {/* Notification Dropdown */}
-                  {isNotificationOpen && (
-                    <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50 max-h-96 overflow-y-auto">
-                      <div className="px-4 py-2 border-b border-gray-200">
-                        <h3 className="font-semibold text-gray-900">Thông báo</h3>
-                      </div>
-
-                      {isLoading ? (
-                        <div className="px-4 py-8 text-center text-gray-500">
-                          <div className="animate-spin w-6 h-6 border-2 border-primary-600 border-t-transparent rounded-full mx-auto mb-2"></div>
-                          <p>Đang tải...</p>
-                        </div>
-                      ) : notifications.length === 0 ? (
-                        <div className="px-4 py-8 text-center text-gray-500">
-                          <Bell className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                          <p>Không có thông báo nào</p>
-                          <p className="text-xs mt-2">Thông báo sẽ xuất hiện khi bạn đặt tour hoặc có cập nhật</p>
-                          <button
-                            onClick={() => {
-                              console.log('🔔 Test notification button clicked');
-                              // Add a test notification
-                              const testNotif = {
-                                id: Date.now(),
-                                type: 'system',
-                                title: '🔔 Bell Notification đã hoạt động!',
-                                message: 'Chúc mừng! Hệ thống thông báo đã hoạt động bình thường.',
-                                time: new Date().toISOString(),
-                                read: false
-                              };
-                              console.log('Test notification:', testNotif);
-                            }}
-                            className="mt-3 px-3 py-1 bg-blue-100 hover:bg-blue-200 text-blue-700 text-xs rounded-full transition-colors"
-                          >
-                            Test Bell 🔔
-                          </button>
-                        </div>
-                      ) : (
-                        <div className="divide-y divide-gray-100">
-                          {notifications.map((notification) => (
-                            <div
-                              key={notification.id}
-                              className={`px-4 py-3 hover:bg-gray-50 cursor-pointer transition-colors ${
-                                !notification.read ? 'bg-blue-50 border-l-4 border-blue-400' : ''
-                              }`}
-                              onClick={() => {
-                                // Mark as read if not already read
-                                if (!notification.read) {
-                                  markAsRead(notification.id);
-                                }
-                                // Navigate to booking detail if applicable
-                                if (notification.bookingId) {
-                                  navigate(`/my-bookings/${notification.bookingId}`);
-                                  setIsNotificationOpen(false);
-                                }
-                              }}
-                            >
-                              <div className="flex items-start space-x-3">
-                                <div className={`w-2 h-2 rounded-full mt-2 ${
-                                  notification.read ? 'bg-gray-300' : 'bg-blue-500'
-                                }`} />
-                                <div className="flex-1 min-w-0">
-                                  <p className="text-sm font-medium text-gray-900 truncate">
-                                    {notification.title}
-                                  </p>
-                                  <p className="text-sm text-gray-600 mt-1 line-clamp-2">
-                                    {notification.message}
-                                  </p>
-                                  <p className="text-xs text-gray-400 mt-2">
-                                    {formatTime(notification.time)}
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-
-                      {notifications.length > 0 && (
-                        <div className="px-4 py-2 border-t border-gray-200 space-y-2">
-                          <button
-                            onClick={() => {
-                              navigate('/notifications');
-                              setIsNotificationOpen(false);
-                            }}
-                            className="w-full text-sm text-primary-600 hover:text-primary-700 font-medium transition-colors"
-                          >
-                            Xem tất cả thông báo
-                          </button>
-                          {unreadCount > 0 && (
-                            <button
-                              onClick={() => {
-                                markAllAsRead();
-                                setIsNotificationOpen(false);
-                              }}
-                              className="w-full text-xs text-gray-500 hover:text-gray-700 font-medium transition-colors"
-                            >
-                              Đánh dấu tất cả đã đọc
-                            </button>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-
-              {/* Quick Login Button for Testing */}
-
+              
               {/* User Menu */}
               {user ? (
-                <div className="relative user-menu">
+                <div className="relative">
                   <button
                     onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
                     className="flex items-center space-x-2 p-2 text-gray-600 hover:text-primary-600 transition-colors"
@@ -435,23 +260,6 @@ const Header = () => {
                     <Link to="/my-bookings" onClick={() => setIsMenuOpen(false)} className="block py-2 text-gray-700 hover:text-primary-600">
                       Đơn đặt chỗ
                     </Link>
-                    <div className="py-2">
-                      <button
-                        onClick={() => {
-                          navigate('/notifications');
-                          setIsMenuOpen(false);
-                        }}
-                        className="flex items-center space-x-2 w-full text-left py-2 text-gray-700 hover:text-primary-600"
-                      >
-                        <Bell className="h-4 w-4" />
-                        <span>Thông báo</span>
-                        {unreadCount > 0 && (
-                          <span className="bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center ml-auto">
-                            {unreadCount > 99 ? '99+' : unreadCount}
-                          </span>
-                        )}
-                      </button>
-                    </div>
                     {user.role === 'admin' && (
                       <Link to="/admin/dashboard" onClick={() => setIsMenuOpen(false)} className="block py-2 text-gray-700 hover:text-primary-600">
                         Admin Panel
@@ -483,4 +291,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderSimple;

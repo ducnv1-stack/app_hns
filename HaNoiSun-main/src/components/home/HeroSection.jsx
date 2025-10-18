@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Search, MapPin, Calendar, Users, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, MapPin, Calendar, Users, ChevronLeft, ChevronRight, LogIn } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const { user, login } = useAuth();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [searchData, setSearchData] = useState({
     destination: '',
     date: '',
     guests: '2 người'
   });
+
 
   const heroSlides = [
     {
@@ -65,6 +70,12 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-screen overflow-hidden">
+      {/* Demo Login Button */}
+      {!user && (
+        <div className="absolute top-4 right-4 z-30">
+        </div>
+      )}
+
       {/* Hero Slides */}
       <div className="relative h-full">
         {heroSlides.map((slide, index) => (

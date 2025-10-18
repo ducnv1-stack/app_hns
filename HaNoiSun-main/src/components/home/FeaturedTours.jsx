@@ -1,19 +1,69 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Clock, Users, MapPin, Heart, ArrowRight } from 'lucide-react';
-import { tours as sharedTours } from '../../data/tours';
+import ImageSlideshow from '../common/ImageSlideshow';
+import { api } from '../../services/api';
+import { config } from '../../config/env';
 
 const FeaturedTours = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [favorites, setFavorites] = useState(new Set());
+  const [tours, setTours] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // Load tours from API
+  useEffect(() => {
+    loadTours();
+  }, []);
+
+  const loadTours = async () => {
+    try {
+      setLoading(true);
+      const response = await api.get('/tours', { 
+        limit: 6, // Giới hạn 6 tours
+        page: 1,
+        category: 'TOUR' // Chỉ lấy tours
+      });
+      
+      if (response.success && response.data.tours) {
+        setTours(response.data.tours);
+      }
+    } catch (error) {
+      console.error('Failed to load tours:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const featuredTours = useMemo(() => {
-    // Hiển thị tất cả các combo hiện có (toàn bộ dữ liệu hiện là combo)
-    return sharedTours.map(t => ({
-      ...t,
-      isLuxury: t.category === 'luxury'
+    return tours.map(tour => ({
+      id: tour.id,
+      title: tour.name,
+      location: tour.country || 'Việt Nam',
+      duration: `${tour.duration_days || 0} ngày`,
+      groupSize: `${tour.min_participants || 1}-${tour.max_participants || 25} người`,
+      price: parseFloat(tour.min_price || 0),
+      originalPrice: tour.max_price ? parseFloat(tour.max_price) : null,
+      rating: 4.8,
+      reviews: 120,
+      // Map all images for slideshow
+      images: tour.images && Array.isArray(tour.images) && tour.images.length > 0
+        ? tour.images.map(img => ({
+            image_url: img.image_url?.startsWith('http') 
+              ? img.image_url 
+              : `${config.API_BASE_URL.replace(/\/api$/, '')}${img.image_url}`,
+            alt: tour.name || 'Tour image'
+          }))
+        : [{ 
+            image_url: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800',
+            alt: tour.name || 'Tour image'
+          }],
+      highlights: tour.itinerary ? ['Hành trình khám phá', 'Trải nghiệm độc đáo'] : [],
+      category: 'tour',
+      continent: 'domestic',
+      discount: null
     }));
-  }, []);
+  }, [tours]);
 
   const categories = useMemo(() => ([
     { id: 'all', name: 'Tất Cả', count: featuredTours.length },
@@ -47,16 +97,29 @@ const FeaturedTours = () => {
     }).format(price);
   };
 
+  if (loading) {
+    return (
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto"></div>
+            <p className="mt-4 text-gray-600">Đang tải tours...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Combo Nổi Bật
+            Tours Nổi Bật
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Các gói combo ưu đãi gồm vé máy bay/khách sạn/vé tham quan được chọn lọc
+            Khám phá những tour du lịch hấp dẫn nhất được chọn lọc kỹ càng
           </p>
         </div>
 
@@ -84,14 +147,16 @@ const FeaturedTours = () => {
               key={tour.id}
               className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover group h-full flex flex-col"
             >
-              {/* Tour Image */}
+              {/* Tour Image Slideshow */}
               <div className="relative overflow-hidden">
-                <img
-                  src={tour.image}
-                  alt={tour.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                <ImageSlideshow 
+                  images={tour.images}
+                  interval={3000}
+                  showControls={true}
+                  autoPlay={true}
+                  aspectRatio="aspect-[4/3]"
                 />
-                <div className="absolute top-4 left-4">
+                <div className="absolute top-4 left-4 z-20">
                   {tour.discount && (
                     <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                       -{tour.discount}%
@@ -100,7 +165,7 @@ const FeaturedTours = () => {
                 </div>
                 <button
                   onClick={() => toggleFavorite(tour.id)}
-                  className="absolute top-4 right-4 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+                  className="absolute top-4 right-4 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors z-20"
                 >
                   <Heart
                     className={`h-5 w-5 ${
@@ -111,7 +176,7 @@ const FeaturedTours = () => {
                   />
                 </button>
                 {tour.isLuxury && (
-                  <div className="absolute bottom-4 left-4">
+                  <div className="absolute bottom-4 left-4 z-20">
                     <span className="bg-accent-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                       Cao Cấp
                     </span>
@@ -135,7 +200,7 @@ const FeaturedTours = () => {
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2 min-h-[56px]">
-                    <Link to={`/tours/${tour.id}`}>{tour.title}</Link>
+                    <Link to={`/tours/${tour.slug || tour.id}`}>{tour.title}</Link>
                   </h3>
 
                 <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
@@ -199,12 +264,21 @@ const FeaturedTours = () => {
           ))}
         </div>
 
+        {/* Empty State */}
+        {filteredTours.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">Không có tour nào</p>
+          </div>
+        )}
+
         {/* View All Button */}
-        <div className="text-center mt-12">
-          <Link to="/tours" className="btn-secondary">
-            Xem Tất Cả Combo
-          </Link>
-        </div>
+        {filteredTours.length > 0 && (
+          <div className="text-center mt-12">
+            <Link to="/tours" className="btn-secondary">
+              Xem Tất Cả Tours
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

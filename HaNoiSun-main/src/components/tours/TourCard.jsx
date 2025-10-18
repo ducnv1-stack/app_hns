@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Clock, Users, MapPin, Heart, ArrowRight, Calendar, TrendingUp } from 'lucide-react';
+import ImageSlideshow from '../common/ImageSlideshow';
+import { config } from '../../config/env';
 
 const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
   const formatPrice = (price) => {
@@ -8,6 +10,32 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
       style: 'currency',
       currency: 'VND'
     }).format(price);
+  };
+
+  // Get all tour images for slideshow
+  const getTourImages = () => {
+    if (!tour) return [{ image_url: '/placeholder-tour.jpg', alt: 'Tour' }];
+    
+    if (tour.images && Array.isArray(tour.images) && tour.images.length > 0) {
+      return tour.images.map(img => ({
+        image_url: img.image_url?.startsWith('http') 
+          ? img.image_url 
+          : `${config.API_BASE_URL.replace(/\/api$/, '')}${img.image_url}`,
+        alt: tour.name || 'Tour image'
+      }));
+    }
+    
+    // Fallback to single image
+    return [{ 
+      image_url: tour.image || '/placeholder-tour.jpg', 
+      alt: tour.name || 'Tour' 
+    }];
+  };
+
+  // Get single image for list view (không dùng slideshow)
+  const getTourImage = () => {
+    const images = getTourImages();
+    return images[0]?.image_url || '/placeholder-tour.jpg';
   };
 
   const formatDate = (dateString) => {
@@ -24,21 +52,19 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
         <div className="flex flex-col md:flex-row">
           {/* Image */}
           <div className="relative md:w-80 h-64 md:h-auto overflow-hidden">
-            <img
-              src={tour.image}
-              alt={tour.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-            />
+          <img
+            src={getTourImage()}
+            alt={tour.name}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            onError={(e) => {
+              if (e.currentTarget.src.endsWith('/placeholder-tour.jpg')) return;
+              e.currentTarget.src = '/placeholder-tour.jpg';
+            }}
+          />
             <div className="absolute top-4 left-4 flex flex-col gap-2">
-              {tour.isOnSale && tour.discount && (
+              {tour.service_type === 'PROMO' && (
                 <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                  -{tour.discount}%
-                </span>
-              )}
-              {tour.isPopular && (
-                <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
-                  <TrendingUp className="h-3 w-3" />
-                  Hot
+                  Khuyến mãi
                 </span>
               )}
             </div>
@@ -58,52 +84,68 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
           <div className="flex-1 p-6">
             <div className="flex items-start justify-between mb-4">
               <div className="flex-1">
-                <div className="flex items-center space-x-1 mb-2">
-                  <Star className="h-4 w-4 text-yellow-400 fill-current" />
-                  <span className="text-sm font-medium text-gray-900">{tour.rating}</span>
-                  <span className="text-sm text-gray-500">({tour.reviews} đánh giá)</span>
-                  <div className="flex items-center text-gray-500 text-sm ml-4">
-                    <MapPin className="h-4 w-4 mr-1" />
-                    <span>{tour.location}</span>
-                  </div>
+                <div className="flex items-center text-gray-500 text-sm">
+                  <MapPin className="h-4 w-4 mr-1" />
+                  <span>{tour.country}</span>
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
-                  {tour.title}
+                  {tour.name}
                 </h3>
 
                 <div className="flex items-center space-x-6 text-sm text-gray-600 mb-4">
                   <div className="flex items-center">
                     <Clock className="h-4 w-4 mr-1" />
-                    <span>{tour.duration}</span>
+                    <span>{tour.duration_days} ngày</span>
                   </div>
                   <div className="flex items-center">
                     <Users className="h-4 w-4 mr-1" />
-                    <span>{tour.groupSize}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    <span>{formatDate(tour.departureDate)}</span>
+                    <span>{tour.min_participants}-{tour.max_participants} người</span>
                   </div>
                 </div>
 
-                {/* Highlights */}
-                <div className="mb-4">
-                  <div className="flex flex-wrap gap-2">
-                    {tour.highlights.slice(0, 3).map((highlight, index) => (
-                      <span
-                        key={index}
-                        className="text-xs bg-primary-50 text-primary-700 px-2 py-1 rounded-full"
-                      >
-                        {highlight}
+                {/* Tour Details */}
+                <div className="mb-4 space-y-2">
+                  {/* Itinerary Preview */}
+                  {tour.itinerary && (
+                    <div className="text-sm text-gray-600">
+                      <span className="font-medium">Hành trình:</span>
+                      <span className="ml-2">
+                        {typeof tour.itinerary === 'string'
+                          ? (tour.itinerary.length > 60
+                              ? tour.itinerary.substring(0, 60) + '...'
+                              : tour.itinerary)
+                          : 'Chi tiết hành trình có sẵn'
+                        }
                       </span>
-                    ))}
-                    {tour.highlights.length > 3 && (
-                      <span className="text-xs text-gray-500">
-                        +{tour.highlights.length - 3} khác
-                      </span>
-                    )}
+                    </div>
+                  )}
+
+                  {/* Capacity Info */}
+                  <div className="text-sm text-gray-600">
+                    <span className="font-medium">Sức chứa:</span>
+                    <span className="ml-2">
+                      {tour.total_capacity ? `${tour.total_capacity} người` : 'Không giới hạn'}
+                    </span>
                   </div>
+
+                  {/* Availability Info */}
+                  <div className="text-sm text-gray-600">
+                    <span className="font-medium">Lịch trình khả dụng:</span>
+                    <span className="ml-2 text-green-600 font-medium">
+                      {tour.availability_count || 0} chuyến
+                    </span>
+                  </div>
+
+                  {/* Service Type */}
+                  {tour.service_type && (
+                    <div className="text-sm text-gray-600">
+                      <span className="font-medium">Loại hình:</span>
+                      <span className="ml-2">
+                        {tour.service_type === 'TOUR' ? 'Tour du lịch' : tour.service_type}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -112,16 +154,13 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
                 <div className="mb-4">
                   <div className="flex items-center justify-end space-x-2 mb-1">
                     <span className="text-2xl font-bold text-primary-600">
-                      {formatPrice(tour.price)}
+                      {formatPrice(tour.min_price)} - {formatPrice(tour.max_price)}
                     </span>
-                    {tour.originalPrice && (
-                      <span className="text-sm text-gray-500 line-through">
-                        {formatPrice(tour.originalPrice)}
-                      </span>
-                    )}
                   </div>
                   <p className="text-sm text-gray-500">/ người</p>
-                  <p className="text-sm text-green-600 font-medium">{tour.availability}</p>
+                  <p className="text-sm text-green-600 font-medium">
+                    {tour.availability_count || 0} lịch trình
+                  </p>
                 </div>
 
                 <Link 
@@ -142,29 +181,25 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
   // Grid view (default)
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden card-hover group h-full flex flex-col">
-      {/* Tour Image */}
+      {/* Tour Image Slideshow */}
       <div className="relative overflow-hidden">
-        <img
-          src={tour.image}
-          alt={tour.title}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+        <ImageSlideshow 
+          images={getTourImages()}
+          interval={3000}
+          showControls={true}
+          autoPlay={true}
+          aspectRatio="aspect-[4/3]"
         />
-        <div className="absolute top-4 left-4 flex flex-col gap-2">
-          {tour.isOnSale && tour.discount && (
+        <div className="absolute top-4 left-4 flex flex-col gap-2 z-20">
+          {tour.service_type === 'PROMO' && (
             <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-              -{tour.discount}%
-            </span>
-          )}
-          {tour.isPopular && (
-            <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
-              <TrendingUp className="h-3 w-3" />
-              Hot
+              Khuyến mãi
             </span>
           )}
         </div>
         <button
           onClick={onToggleFavorite}
-          className="absolute top-4 right-4 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+          className="absolute top-4 right-4 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors z-20"
         >
           <Heart
             className={`h-5 w-5 ${
@@ -178,55 +213,69 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
       <div className="p-6 flex flex-col h-full">
         <div className="flex-grow">
           <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center space-x-1">
-            <Star className="h-4 w-4 text-yellow-400 fill-current" />
-            <span className="text-sm font-medium text-gray-900">{tour.rating}</span>
-            <span className="text-sm text-gray-500">({tour.reviews})</span>
-          </div>
-          <div className="flex items-center text-gray-500 text-sm">
-            <MapPin className="h-4 w-4 mr-1" />
-            <span className="truncate max-w-32">{tour.location}</span>
-          </div>
+            <div className="flex items-center text-gray-500 text-sm">
+              <MapPin className="h-4 w-4 mr-1" />
+              <span className="truncate max-w-32">{tour.country}</span>
+            </div>
           </div>
 
           <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors line-clamp-2 min-h-[56px]">
-            <Link to={`/tours/${tour.id}`}>{tour.title}</Link>
+            <Link to={`/tours/${tour.slug || tour.id}`}>{tour.name}</Link>
           </h3>
 
           <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
             <div className="flex items-center">
               <Clock className="h-4 w-4 mr-1" />
-              <span>{tour.duration}</span>
+              <span>{tour.duration_days} ngày</span>
             </div>
             <div className="flex items-center">
               <Users className="h-4 w-4 mr-1" />
-              <span>{tour.groupSize}</span>
+              <span>{tour.min_participants}-{tour.max_participants} người</span>
             </div>
           </div>
 
-          {/* Departure Date */}
-          <div className="flex items-center text-sm text-gray-600 mb-4">
-            <Calendar className="h-4 w-4 mr-1" />
-            <span>Khởi hành: {formatDate(tour.departureDate)}</span>
-          </div>
+          {/* Tour Details */}
+          <div className="mb-4 space-y-2">
+            {/* Itinerary Preview */}
+            {tour.itinerary && (
+              <div className="text-sm text-gray-600">
+                <span className="font-medium">Hành trình:</span>
+                <span className="ml-2">
+                  {typeof tour.itinerary === 'string'
+                    ? (tour.itinerary.length > 40
+                        ? tour.itinerary.substring(0, 40) + '...'
+                        : tour.itinerary)
+                    : 'Chi tiết hành trình có sẵn'
+                  }
+                </span>
+              </div>
+            )}
 
-          {/* Highlights */}
-          <div className="mb-4">
-            <div className="flex flex-wrap gap-2">
-              {tour.highlights.slice(0, 2).map((highlight, index) => (
-                <span
-                  key={index}
-                  className="text-xs bg-primary-50 text-primary-700 px-2 py-1 rounded-full"
-                >
-                  {highlight}
-                </span>
-              ))}
-              {tour.highlights.length > 2 && (
-                <span className="text-xs text-gray-500">
-                  +{tour.highlights.length - 2} khác
-                </span>
-              )}
+            {/* Capacity Info */}
+            <div className="text-sm text-gray-600">
+              <span className="font-medium">Sức chứa:</span>
+              <span className="ml-2">
+                {tour.total_capacity ? `${tour.total_capacity} người` : 'Không giới hạn'}
+              </span>
             </div>
+
+            {/* Availability Info */}
+            <div className="text-sm text-gray-600">
+              <span className="font-medium">Lịch trình khả dụng:</span>
+              <span className="ml-2 text-green-600 font-medium">
+                {tour.availability_count || 0} chuyến
+              </span>
+            </div>
+
+            {/* Service Type */}
+            {tour.service_type && (
+              <div className="text-sm text-gray-600">
+                <span className="font-medium">Loại hình:</span>
+                <span className="ml-2">
+                  {tour.service_type === 'TOUR' ? 'Tour du lịch' : tour.service_type}
+                </span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -235,18 +284,15 @@ const TourCard = ({ tour, viewMode, isFavorite, onToggleFavorite }) => {
           <div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-primary-600">
-                {formatPrice(tour.price)}
+                {formatPrice(tour.min_price)} - {formatPrice(tour.max_price)}
               </span>
-              {tour.originalPrice && (
-                <span className="text-sm text-gray-500 line-through">
-                  {formatPrice(tour.originalPrice)}
-                </span>
-              )}
             </div>
             <p className="text-sm text-gray-500">/ người</p>
           </div>
           <div className="text-right">
-            <p className="text-sm text-green-600 font-medium">{tour.availability}</p>
+            <p className="text-sm text-green-600 font-medium">
+              {tour.availability_count || 0} lịch trình
+            </p>
           </div>
         </div>
 
