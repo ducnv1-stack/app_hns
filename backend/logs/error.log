@@ -1,0 +1,836 @@
+{
+  "timestamp": "2025-10-17T01:21:58.681Z",
+  "level": "ERROR",
+  "message": "Test error message",
+  "stack": "Error: Test error\n    at LoggingSystemTester.testLogFileOperations (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:210:40)\n    at LoggingSystemTester.runAllTests (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:245:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "errorMessage": "Test error",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T01:21:58.685Z",
+  "level": "ERROR",
+  "message": "Auth login failed",
+  "action": "login",
+  "userId": 2,
+  "email": "invalid@example.com",
+  "success": false,
+  "stack": "Error: Invalid credentials\n    at LoggingSystemTester.testLogFileOperations (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:217:62)\n    at LoggingSystemTester.runAllTests (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:245:18)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "errorMessage": "Invalid credentials",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T01:21:58.799Z",
+  "level": "ERROR",
+  "message": "Database query failed",
+  "query": "SELECT * FROM non_existent_table",
+  "params": [],
+  "duration": "110ms",
+  "context": {},
+  "errorCode": "42P01",
+  "stack": "error: relation \"non_existent_table\" does not exist\n    at D:\\Project\\HNS\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (D:\\Project\\HNS\\backend\\config\\database.js:34:17)\n    at async DatabaseLogger.executeQuery (D:\\Project\\HNS\\backend\\utils\\databaseLogger.js:21:22)\n    at async LoggingSystemTester.testDatabaseErrors (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:39:7)\n    at async LoggingSystemTester.runAllTests (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:246:7)",
+  "errorMessage": "relation \"non_existent_table\" does not exist",
+  "errorName": "error"
+}
+{
+  "timestamp": "2025-10-17T01:21:59.007Z",
+  "level": "ERROR",
+  "message": "Database query failed",
+  "query": "INSERT INTO users (id, username) VALUES (1, $1)",
+  "params": [
+    "test_user_duplicate"
+  ],
+  "duration": "207ms",
+  "context": {},
+  "errorCode": "23502",
+  "errorDetail": "Failing row contains (1, null, test_user_duplicate, null, local, null, t, null, 2025-10-17 08:21:58.973458+07, 2025-10-17 08:21:58.973458+07).",
+  "stack": "error: null value in column \"party_id\" of relation \"users\" violates not-null constraint\n    at D:\\Project\\HNS\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (D:\\Project\\HNS\\backend\\config\\database.js:34:17)\n    at async DatabaseLogger.executeQuery (D:\\Project\\HNS\\backend\\utils\\databaseLogger.js:21:22)\n    at async LoggingSystemTester.testDatabaseErrors (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:46:7)\n    at async LoggingSystemTester.runAllTests (D:\\Project\\HNS\\backend\\scripts\\testLoggingSystem.js:246:7)",
+  "errorMessage": "null value in column \"party_id\" of relation \"users\" violates not-null constraint",
+  "errorName": "error"
+}
+{
+  "timestamp": "2025-10-17T01:33:54.963Z",
+  "level": "ERROR",
+  "message": "Failed to check tour variants",
+  "stack": "error: column sv.variant_name does not exist\n    at D:\\Project\\HNS\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (D:\\Project\\HNS\\backend\\config\\database.js:34:17)\n    at async DatabaseChecker.checkTourVariants (D:\\Project\\HNS\\backend\\scripts\\checkDatabaseConnection.js:172:30)\n    at async DatabaseChecker.runAllChecks (D:\\Project\\HNS\\backend\\scripts\\checkDatabaseConnection.js:322:7)",
+  "errorMessage": "column sv.variant_name does not exist",
+  "errorName": "error"
+}
+{
+  "timestamp": "2025-10-17T02:49:24.296Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/api/notifications",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /api/notifications\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /api/notifications",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T02:49:24.298Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /api/notifications",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T02:49:24.299Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/api/notifications",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "4ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T02:58:58.467Z",
+  "level": "ERROR",
+  "message": "HTTP 401",
+  "method": "GET",
+  "url": "/api/notifications",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584",
+  "userId": null,
+  "statusCode": 401,
+  "responseTime": "2ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T03:16:49.581Z",
+  "level": "ERROR",
+  "message": "HTTP 401",
+  "method": "GET",
+  "url": "/api/admin/tours/12/content",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584",
+  "userId": null,
+  "statusCode": 401,
+  "responseTime": "1ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T03:25:10.977Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /favicon.ico\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /favicon.ico",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T03:25:10.978Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /favicon.ico",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T03:25:10.978Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "2ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T04:58:09.915Z",
+  "level": "ERROR",
+  "message": "Failed to check tour variants",
+  "stack": "error: column sv.variant_name does not exist\n    at D:\\Project\\HNS\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async query (D:\\Project\\HNS\\backend\\config\\database.js:34:17)\n    at async DatabaseChecker.checkTourVariants (D:\\Project\\HNS\\backend\\scripts\\checkDatabaseConnection.js:172:30)\n    at async DatabaseChecker.runAllChecks (D:\\Project\\HNS\\backend\\scripts\\checkDatabaseConnection.js:322:7)",
+  "errorMessage": "column sv.variant_name does not exist",
+  "errorName": "error"
+}
+{
+  "timestamp": "2025-10-17T05:23:07.391Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/auth/login",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": null,
+  "statusCode": 400,
+  "responseTime": "8ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:42:33.114Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "45ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:47:08.869Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "11ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:51:13.635Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "7ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:37.241Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "31ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:37.641Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "7ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:37.815Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "5ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:37.971Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "6ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:38.111Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "4ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:38.265Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "7ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:38.417Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "6ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:38.577Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "7ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:57:38.735Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "6ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T06:59:58.211Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "6ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:04:58.133Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/api",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /api\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /api",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T07:04:58.134Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /api",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:04:58.136Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/api",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "4ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:04:58.180Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /favicon.ico\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /favicon.ico",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T07:04:58.181Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /favicon.ico",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:04:58.182Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "4ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:06:57.973Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/11",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "19ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:07:24.307Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/11",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "9ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:08:03.563Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/11",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "162ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:52:22.801Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "25ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:54:23.187Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/api",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /api\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /api",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T07:54:23.189Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /api",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:54:23.193Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/api",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "11ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:54:23.250Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /favicon.ico\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /favicon.ico",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-17T07:54:23.251Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /favicon.ico",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:54:23.253Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "4ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-17T07:55:28.297Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "PUT",
+  "url": "/api/admin/tours/12",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 500,
+  "responseTime": "23ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T03:46:02.733Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/api",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /api\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /api",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-18T03:46:02.735Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /api",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T03:46:02.739Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/api",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "9ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T03:46:02.803Z",
+  "level": "ERROR",
+  "message": "Error occurred in request",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "body": null,
+  "query": {},
+  "params": {},
+  "stack": "Error: Route not found: GET /favicon.ico\n    at notFoundHandler (D:\\Project\\HNS\\backend\\middleware\\errorHandler.js:218:17)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:286:9\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at param (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:376:14)\n    at Function.process_params (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:421:3)\n    at next (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Layer.handle [as handle_request] (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\layer.js:91:12)\n    at trim_prefix (D:\\Project\\HNS\\backend\\node_modules\\express\\lib\\router\\index.js:328:13)",
+  "errorMessage": "Route not found: GET /favicon.ico",
+  "errorName": "Error"
+}
+{
+  "timestamp": "2025-10-18T03:46:02.804Z",
+  "level": "ERROR",
+  "message": "Route not found: GET /favicon.ico",
+  "statusCode": 404,
+  "isOperational": true,
+  "metadata": {},
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T03:46:02.805Z",
+  "level": "ERROR",
+  "message": "HTTP 404",
+  "method": "GET",
+  "url": "/favicon.ico",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 404,
+  "responseTime": "3ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:14:42.819Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "128ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:16:53.233Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "64ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:16:53.295Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "57ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:16:53.303Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "3ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:16:53.361Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "56ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:17:48.053Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "3ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:17:48.059Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "3ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-10-18T04:17:48.119Z",
+  "level": "ERROR",
+  "message": "HTTP 400",
+  "method": "POST",
+  "url": "/api/admin/users",
+  "ip": "::1",
+  "userAgent": "node",
+  "userId": "1",
+  "statusCode": 400,
+  "responseTime": "57ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
