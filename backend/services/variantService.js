@@ -1,4 +1,4 @@
-const { query, getClient } = require('../config/database');
+const { query, getClient } = require('../config/database-supabase');
 
 /**
  * Service for managing service variants with attributes

@@ -1,4 +1,4 @@
-const { pool } = require('../config/database');
+const { pool } = require('../config/database-supabase');
 const { generateSlug, generateUniqueSlug, isValidSlug, extractIdFromSlug } = require('../utils/slugGenerator');
 
 class Tour {

@@ -354,7 +354,7 @@ async function handlePaymentIntentSucceeded(paymentIntent) {
       WHERE booking_id = $1 AND gateway_transaction_id = $2
       LIMIT 1
     `;
-    const result = await require('../config/database').query(query, [
+    const result = await require('../config/database-supabase').query(query, [
       booking_id,
       paymentIntent.id
     ]);
@@ -394,7 +394,7 @@ async function handlePaymentIntentFailed(paymentIntent) {
       WHERE booking_id = $1 AND gateway_transaction_id = $2
       LIMIT 1
     `;
-    const result = await require('../config/database').query(query, [
+    const result = await require('../config/database-supabase').query(query, [
       booking_id,
       paymentIntent.id
     ]);

@@ -12,7 +12,7 @@ const {
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-const { query, getClient } = require('../../config/database');
+const { query, getClient } = require('../../config/database-supabase');
 
 // Apply admin authentication and authorization to all routes
 router.use(authenticate);

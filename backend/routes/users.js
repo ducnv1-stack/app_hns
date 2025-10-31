@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { query } = require('../config/database');
+const { query } = require('../config/database-supabase');
 const { authenticate, authorize } = require('../middleware/auth');
 
 // GET /api/users/profile - Get user profile - Authenticated users

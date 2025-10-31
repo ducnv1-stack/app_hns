@@ -29,8 +29,27 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // CORS configuration - MUST be before helmet
+const allowedOrigins = [
+  'http://localhost:3000', 
+  'http://localhost:5173', 
+  'http://127.0.0.1:5173',
+  'https://app.hanoisuntravel.com',
+  'https://hanoisuntravel.com',
+  'https://www.hanoisuntravel.com'
+];
+
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://127.0.0.1:5173'],
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      console.log('CORS blocked origin:', origin);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
@@ -76,6 +95,34 @@ app.get('/uploads/*', (req, res, next) => {
   }
   // fallback to 404 if no placeholder exists
   return res.status(404).send('File not found');
+});
+
+// Favicon endpoint
+app.get('/favicon.ico', (req, res) => {
+  res.status(204).end(); // No content
+});
+
+// API root endpoint
+app.get('/api', (req, res) => {
+  res.json({ 
+    status: 'OK', 
+    message: 'HNS Booking Tour API is running',
+    version: '1.0.0',
+    endpoints: {
+      health: '/api/health',
+      tours: '/api/tours',
+      bookings: '/api/bookings',
+      users: '/api/users',
+      auth: '/api/auth',
+      payments: '/api/payments',
+      admin: {
+        tours: '/api/admin/tours',
+        users: '/api/admin/users',
+        analytics: '/api/admin/analytics'
+      }
+    },
+    timestamp: new Date().toISOString()
+  });
 });
 
 // Health check endpoint

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { query } = require('../config/database');
+const { query } = require('../config/database-supabase');
 const Tour = require('../models/Tour');
 
 // GET /api/tours - Get all tours with filters

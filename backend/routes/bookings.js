@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { query, getClient } = require('../config/database');
+const { query, getClient } = require('../config/database-supabase');
 const { authenticate, authorize } = require('../middleware/auth');
 
 // GET /api/bookings - Get all bookings (with filters) - Admin only

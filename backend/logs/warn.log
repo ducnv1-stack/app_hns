@@ -12328,3 +12328,3987 @@
   "statusCode": 304,
   "responseTime": "3ms"
 }
+{
+  "timestamp": "2025-10-18T05:51:27.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:51:27.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:51:27.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:51:27.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:51:27.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:51:27.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.243Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.244Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.245Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.245Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.247Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.250Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.251Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.254Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.255Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.539Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.539Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:13.540Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:17.111Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:17.111Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:29.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:29.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:32.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:32.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.386Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.386Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:38.387Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:41.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:41.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:41.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:44.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:44.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.376Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.381Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:47.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:50.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:50.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:50.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:53.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:53.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.383Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.383Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:56.385Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:59.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:59.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:52:59.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:02.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:05.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:08.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:08.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:08.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:11.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.376Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:14.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:17.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:17.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:17.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:20.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:53:27.381Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:54:27.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:54:27.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:54:27.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:03.183Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333772.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:11.376Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:14.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:14.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:17.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:17.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.387Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333772.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.388Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.389Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:20.390Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:23.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:23.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333772.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:29.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:32.340Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:32.341Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:35.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:35.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333772.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:38.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:41.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:41.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:44.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:44.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.367Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333772.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:47.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:50.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:50.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:53.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:53.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333772.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:56.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:58.550Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:55:58.551Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.361Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:02.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:05.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:05.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:08.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:08.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.376Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:11.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:14.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:14.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:17.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:17.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:20.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:23.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:23.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.376Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.383Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.384Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.386Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:29.387Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:32.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:32.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:35.361Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:35.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.382Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.383Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.384Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:38.386Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:41.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:41.366Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:44.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:44.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.380Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.381Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.386Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.387Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.388Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:47.393Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:50.372Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:50.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:53.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:53.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.364Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.365Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.368Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.369Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515214088.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296501.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.371Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349838.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.375Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:56.376Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:59.362Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430971.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:56:59.363Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409416.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:57:27.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.370Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.373Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.374Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_6_1760515216659.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_5_1760515296502.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.384Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_4_1760515333775.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.386Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_3_1760515349839.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.387Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430963.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:27.390Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409406.png",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:28.540Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_1_1760515430970.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-18T05:58:28.540Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_2_1760515409415.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T06:05:27.377Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T06:05:27.378Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T06:05:27.379Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-18T06:05:27.381Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-18T06:05:39.925Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/admin/tours?page=1&limit=50",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": "1",
+  "statusCode": 304,
+  "responseTime": "8ms"
+}
+{
+  "timestamp": "2025-10-18T06:06:09.601Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/tours?limit=6&page=1&category=TOUR",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "39ms"
+}
+{
+  "timestamp": "2025-10-18T06:06:09.619Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T06:06:09.620Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-18T06:06:09.620Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_10_1760515102407.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T06:06:09.622Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-18T06:06:09.622Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:25.495Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/tours?limit=6&page=1&category=TOUR",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3994ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:25.531Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:25.532Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_10_1760515102407.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:25.533Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085176.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:25.533Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:25.536Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:28.545Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:28.546Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:28.546Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:28.547Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:53.395Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:53.395Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:53.396Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-22T03:25:53.398Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "0ms"
+}
+{
+  "timestamp": "2025-10-22T03:28:31.928Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/tours/11",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "967ms"
+}
+{
+  "timestamp": "2025-10-22T03:28:34.391Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-22T03:33:28.391Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "2ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:03.980Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:09.682Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/tours?limit=6&page=1&category=TOUR",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4034ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:09.707Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182734.jpeg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:09.707Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_10_1760515102407.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:09.708Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:09.709Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:12.709Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_11_1760515085178.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "5ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:12.710Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "4ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:12.711Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_12_1760515019278.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:12.712Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_8_1760515182735.webp",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:19.765Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/tours/9",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "961ms"
+}
+{
+  "timestamp": "2025-10-22T07:14:21.812Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/uploads/tours/tour_9_1760515124964.jpg",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-10-22T08:17:41.792Z",
+  "level": "WARN",
+  "message": "HTTP 304",
+  "method": "GET",
+  "url": "/api/tours?limit=6&page=1&category=TOUR",
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "userId": null,
+  "statusCode": 304,
+  "responseTime": "3980ms"
+}

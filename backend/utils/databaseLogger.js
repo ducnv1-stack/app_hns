@@ -1,4 +1,4 @@
-const { query } = require('../config/database');
+const { query } = require('../config/database-supabase');
 const logger = require('./logger');
 
 /**
@@ -47,7 +47,7 @@ class DatabaseLogger {
    * Execute transaction với logging
    */
   static async executeTransaction(queries, context = {}) {
-    const { getClient } = require('../config/database');
+    const { getClient } = require('../config/database-supabase');
     const client = await getClient();
     
     try {
