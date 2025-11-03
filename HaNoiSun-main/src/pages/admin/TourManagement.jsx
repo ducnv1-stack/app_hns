@@ -90,12 +90,18 @@ const TourManagement = () => {
     }
   };
 
-  const handleDeleteTours = () => {
+  const handleDeleteTours = async () => {
     if (selectedTours.length === 0) return;
-    
-    if (confirm(`Bạn có chắc chắn muốn xóa ${selectedTours.length} tour đã chọn?`)) {
+    if (!confirm(`Bạn có chắc chắn muốn xóa ${selectedTours.length} tour đã chọn?`)) return;
+
+    try {
+      // Gọi API xóa mềm cho từng tour
+      await Promise.all(selectedTours.map(id => adminTourService.deleteTour(id)));
+      // Cập nhật UI
       setTours(prev => prev.filter(tour => !selectedTours.includes(tour.id)));
       setSelectedTours([]);
+    } catch (e) {
+      alert(e?.message || 'Xóa tour thất bại');
     }
   };
 
@@ -304,9 +310,13 @@ const TourManagement = () => {
                           <Eye className="h-4 w-4" />
                         </Link>
                         <button
-                          onClick={() => {
-                            if (confirm('Bạn có chắc chắn muốn xóa tour này?')) {
+                          onClick={async () => {
+                            if (!confirm('Bạn có chắc chắn muốn xóa tour này?')) return;
+                            try {
+                              await adminTourService.deleteTour(tour.id);
                               setTours(prev => prev.filter(t => t.id !== tour.id));
+                            } catch (e) {
+                              alert(e?.message || 'Xóa tour thất bại');
                             }
                           }}
                           className="text-red-600 hover:text-red-900"

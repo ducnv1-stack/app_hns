@@ -146,11 +146,7 @@ const HeroSection = () => {
           <p className="text-lg mb-8 text-gray-200 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             {heroSlides[currentSlide].description}
           </p>
-          {heroSlides[currentSlide].source && (
-            <p className="text-sm text-gray-300">
-              Nguồn ảnh: <a href={heroSlides[currentSlide].source} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Xem chi tiết</a>
-            </p>
-          )}
+          {/* Image source link removed per request */}
         </div>
       </div>
 

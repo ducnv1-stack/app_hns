@@ -61,6 +61,20 @@ export const adminTourService = {
     }
   },
 
+  // Delete a tour (soft delete)
+  async deleteTour(id) {
+    const res = await api.delete(`/admin/tours/${id}`);
+    if (!res?.success) throw new Error(res?.error || 'Failed to delete tour');
+    return res;
+  },
+
+  // Permanently delete a tour
+  async hardDeleteTour(id) {
+    const res = await api.delete(`/admin/tours/${id}/hard`);
+    if (!res?.success) throw new Error(res?.error || 'Failed to permanently delete tour');
+    return res;
+  },
+
   // Fetch full editable content for a tour
   async getTourContent(id) {
     const res = await api.get(`/admin/tours/${id}/content`);
