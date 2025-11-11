@@ -24402,3 +24402,11 @@
   "environment": "production",
   "apiUrl": "http://localhost:5000/api"
 }
+{
+  "timestamp": "2025-11-11T08:14:07.128Z",
+  "level": "INFO",
+  "message": "Server started successfully",
+  "port": "5000",
+  "environment": "production",
+  "apiUrl": "http://localhost:5000/api"
+}
