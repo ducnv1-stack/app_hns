@@ -43,10 +43,13 @@ class Logger {
 
   /**
    * Write log to file
+   * DISABLED: File logging is turned off to prevent log file growth
    */
   writeToFile(filename, content) {
-    const logFile = path.join(logsDir, filename);
-    fs.appendFileSync(logFile, content + '\n');
+    // File logging disabled - only console logging is active
+    // Uncomment the lines below to re-enable file logging:
+    // const logFile = path.join(logsDir, filename);
+    // fs.appendFileSync(logFile, content + '\n');
   }
 
   /**
