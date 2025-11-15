@@ -3,27 +3,39 @@ const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../config.env') });
 
 // Supabase Database configuration
-const dbConfig = {
-  // Supabase connection string
-  connectionString: process.env.SUPABASE_DB_URL || process.env.DATABASE_URL,
-  
-  // Alternative: Individual parameters (if not using connection string)
-  user: process.env.SUPABASE_DB_USER || process.env.DB_USER,
-  password: process.env.SUPABASE_DB_PASS || process.env.DB_PASS,
-  host: process.env.SUPABASE_DB_HOST || process.env.DB_HOST,
-  port: process.env.SUPABASE_DB_PORT || process.env.DB_PORT || 5432,
-  database: process.env.SUPABASE_DB_NAME || process.env.DB_NAME,
-  
-  // SSL configuration for Supabase (required)
-  ssl: {
-    rejectUnauthorized: false
-  },
-  
-  // Pool configuration optimized for Supabase
-  max: 20, // Maximum number of clients in the pool
-  idleTimeoutMillis: 30000, // Close idle clients after 30 seconds
-  connectionTimeoutMillis: 10000, // Increased timeout for cloud connection
-};
+let dbConfig;
+
+// Ưu tiên dùng connection string nếu có
+if (process.env.SUPABASE_DB_URL || process.env.DATABASE_URL) {
+  dbConfig = {
+    connectionString: process.env.SUPABASE_DB_URL || process.env.DATABASE_URL,
+    // SSL configuration for Supabase (required)
+    ssl: {
+      rejectUnauthorized: false
+    },
+    // Pool configuration optimized for Supabase
+    max: 20, // Maximum number of clients in the pool
+    idleTimeoutMillis: 30000, // Close idle clients after 30 seconds
+    connectionTimeoutMillis: 10000, // Increased timeout for cloud connection
+  };
+} else {
+  // Fallback: Dùng individual parameters
+  dbConfig = {
+    user: process.env.SUPABASE_DB_USER || process.env.DB_USER,
+    password: process.env.SUPABASE_DB_PASS || process.env.DB_PASS,
+    host: process.env.SUPABASE_DB_HOST || process.env.DB_HOST,
+    port: process.env.SUPABASE_DB_PORT || process.env.DB_PORT || 5432,
+    database: process.env.SUPABASE_DB_NAME || process.env.DB_NAME,
+    // SSL configuration for Supabase (required)
+    ssl: {
+      rejectUnauthorized: false
+    },
+    // Pool configuration optimized for Supabase
+    max: 20, // Maximum number of clients in the pool
+    idleTimeoutMillis: 30000, // Close idle clients after 30 seconds
+    connectionTimeoutMillis: 10000, // Increased timeout for cloud connection
+  };
+}
 
 // Create connection pool
 const pool = new Pool(dbConfig);

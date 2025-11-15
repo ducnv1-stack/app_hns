@@ -52,6 +52,9 @@ router.get('/', async (req, res) => {
     }
 
     const offset = (page - 1) * limit;
+    // Tính toán index cho limit và offset TRƯỚC KHI push
+    const limitParamIndex = queryParams.length + 1;
+    const offsetParamIndex = queryParams.length + 2;
     queryParams.push(limit, offset);
 
     const toursQuery = `
@@ -81,7 +84,7 @@ router.get('/', async (req, res) => {
       WHERE ${whereConditions.join(' AND ')}
       GROUP BY s.id, std.duration_days, std.country, std.min_participants, std.max_participants, std.itinerary
       ORDER BY s.created_at DESC
-      LIMIT $${paramIndex} OFFSET $${paramIndex + 1}
+      LIMIT $${limitParamIndex} OFFSET $${offsetParamIndex}
     `;
 
     const countQuery = `
@@ -134,10 +137,13 @@ router.get('/', async (req, res) => {
     });
 
   } catch (error) {
-    console.error('Error fetching tours:', error);
+    console.error('❌ Error fetching tours:', error);
+    console.error('❌ Error stack:', error.stack);
+    console.error('❌ Error message:', error.message);
     res.status(500).json({
       success: false,
-      error: 'Failed to fetch tours'
+      error: 'Failed to fetch tours',
+      details: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
   }
 });
