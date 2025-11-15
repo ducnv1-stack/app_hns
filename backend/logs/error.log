@@ -918,3 +918,93 @@
   "errorMessage": null,
   "errorName": null
 }
+{
+  "timestamp": "2025-11-15T04:28:53.639Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "GET",
+  "url": "/api/tours?page=1&limit=50",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 500,
+  "responseTime": "34ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-11-15T04:28:53.645Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "GET",
+  "url": "/api/tours/meta/countries",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 500,
+  "responseTime": "35ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-11-15T04:28:53.648Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "GET",
+  "url": "/api/tours/meta/categories",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 500,
+  "responseTime": "36ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.154Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "GET",
+  "url": "/api/tours?page=1&limit=50",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 500,
+  "responseTime": "22ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.158Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "GET",
+  "url": "/api/tours/meta/categories",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 500,
+  "responseTime": "22ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.162Z",
+  "level": "ERROR",
+  "message": "HTTP 500",
+  "method": "GET",
+  "url": "/api/tours/meta/countries",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 500,
+  "responseTime": "28ms",
+  "stack": null,
+  "errorMessage": null,
+  "errorName": null
+}

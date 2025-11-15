@@ -37604,3 +37604,115 @@
   "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
   "userId": null
 }
+{
+  "timestamp": "2025-11-15T04:28:53.605Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180933605_5vnwoqlsx",
+  "method": "GET",
+  "url": "/api/tours?page=1&limit=50",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:53.610Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180933610_3ojn0ckby",
+  "method": "GET",
+  "url": "/api/tours/meta/countries",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:53.612Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180933612_v84jjwrri",
+  "method": "GET",
+  "url": "/api/tours/meta/categories",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:53.617Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180933617_9p86z5my5",
+  "method": "GET",
+  "url": "/api/health",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:53.618Z",
+  "level": "INFO",
+  "message": "HTTP 200",
+  "method": "GET",
+  "url": "/api/health",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 200,
+  "responseTime": "1ms"
+}
+{
+  "timestamp": "2025-11-15T04:28:54.132Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180934132_h9x8fahep",
+  "method": "GET",
+  "url": "/api/tours?page=1&limit=50",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.134Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180934134_mx7dp60a0",
+  "method": "GET",
+  "url": "/api/tours/meta/countries",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.136Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180934136_cdng4eyxj",
+  "method": "GET",
+  "url": "/api/tours/meta/categories",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.139Z",
+  "level": "INFO",
+  "message": "Request started",
+  "requestId": "req_1763180934139_fdcq64ah6",
+  "method": "GET",
+  "url": "/api/health",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null
+}
+{
+  "timestamp": "2025-11-15T04:28:54.140Z",
+  "level": "INFO",
+  "message": "HTTP 200",
+  "method": "GET",
+  "url": "/api/health",
+  "ip": "::ffff:127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "userId": null,
+  "statusCode": 200,
+  "responseTime": "1ms"
+}
