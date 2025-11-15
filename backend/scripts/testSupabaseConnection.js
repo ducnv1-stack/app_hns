@@ -133,7 +133,7 @@ async function testSupabaseConnection() {
   } catch (error) {
     console.error('❌ Supabase connection test failed:', error);
     console.log('\n🔧 Troubleshooting:');
-    console.log('   1. Check SUPABASE_DB_URL in config.env');
+    console.log('   1. Check SUPABASE_DB_URL in .env');
     console.log('   2. Verify Supabase project is running');
     console.log('   3. Check network connectivity');
     console.log('   4. Verify database schema was imported');

@@ -3,7 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, 'config.env') });
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 // Import logging utilities
 const logger = require('./utils/logger');
